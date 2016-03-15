@@ -21,7 +21,10 @@
 	
 	$allow = array("login","painel");
 	
-	if(in_array($get, $allow))
+	if(empty($get)){
+		$url = BASE_PATH . DS . "app" . DS . "views" . DS . "home" . ".php";
+	}
+	elseif(in_array($get, $allow))
 	    {
 		
 			$url = BASE_PATH . DS . "app" . DS . "views" . DS . $get . ".php";

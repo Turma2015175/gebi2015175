@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
    
-    <title>Sistema 2015175 | <?php echo $title; ?></title>
+    <title>GEBI 2015175 | <?php echo $title; ?></title>
 
     
     <link href="app/assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="app/assets/css/estilos.css" rel="stylesheet" />
+	<link href="app/assets/css/style.css" rel="stylesheet" />
 	
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' />
 
@@ -22,7 +22,7 @@
   </head>
   <body>
     <div id="preloader">
-		<img src="app/assets/images/carregando.gif" alt="" title="" />
+		<img src="app/assets/img/preloader.gif" alt="" title="" />
 	</div>
 	
 	<div class="container" id="site">

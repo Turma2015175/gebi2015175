@@ -1,21 +1,13 @@
-body{
-		
+#site{
+	display:none;
 }
-
 #preloader{
-		display:none;
-		height:128px;
-		width:128px;
-		top: 50%;
-		left: 50%;
-		padding: -64px 0 0 -64px;
-}
-
-#banner{
-		box-shadow: -7px 7px 5px #efe; 
-		background-color: #fff;
-		border-radius:10px;
-		border:1px solid #5f5;
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	
+	top: 50%;
+	left:50%;
+	margin: -32px 0 0 -32px;
 	
 }
-
