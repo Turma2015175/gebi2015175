@@ -19,7 +19,7 @@
 		echo " Erro 404";
 	} */
 	
-	$allow = array("login","quemsomos");
+	$allow = array("login","quemsomos", "cadastrouser");
 	
 	if(empty($get)){
 		$url = BASE_PATH . DS . "app" . DS . "views" . DS . "home" . ".php";
