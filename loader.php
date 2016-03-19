@@ -19,7 +19,7 @@
 		echo " Erro 404";
 	} */
 	
-	$allow = array("login","painel");
+	$allow = array("login","quemsomos");
 	
 	if(empty($get)){
 		$url = BASE_PATH . DS . "app" . DS . "views" . DS . "home" . ".php";
@@ -28,11 +28,11 @@
 	    {
 		
 			$url = BASE_PATH . DS . "app" . DS . "views" . DS . $get . ".php";
-		
+			
 	    }
 	else
 	    {
-		
+
 			 $url = BASE_PATH . DS . "app" . DS . "views" . DS . "404.php";
 		 
 		 }	 
