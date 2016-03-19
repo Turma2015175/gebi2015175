@@ -1,5 +1,5 @@
 <form action="" method="" id="formulario">
-	<fildset>
+	<fieldset>
 		<legend>Cadastro de Usuário</legend>
 		
 		
@@ -76,7 +76,7 @@
 
 		<label  class="cadastro" for="outro">Outros</label>
 		<input type="checkbox" id="outro" name="outro"/>
-	</fildset>
+	</fieldset>
 		<br><br>
 	
 	
