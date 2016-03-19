@@ -31,12 +31,50 @@
 	</div>
 	
 	<div class="container" id="site">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">GEBI2015175</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="/">Home</a></li>
+						<li><a href='/quemsomos'>Quem Somos</a></li>
+					
+					</ul>
+					<div id="navbar" class="navbar-right">
+						<form class="navbar-form">
+							<div class="form-group">
+								<input placeholder="Email" class="form-control" type="text">
+							</div>
+							<div class="form-group">
+								<input placeholder="Password" class="form-control" type="password">
+							</div>
+							<button type="submit" class="btn btn-success">Entrar</button>
+							<a class="btn btn-primary" href="/cadastrouser">Cadastro</a>
+						</form>
+						
+					</div>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+		<br/>
+		<br/>
+		<br/>
+
 		<?php require $url; ?>
 	</div>
 
     
     <script src="app/assets/js/jquery.min.js"></script>
 	<script src="app/assets/js/jquery.validate.min.js"></script>
+	<script src="app/assets/js/bootstrap.min.js"></script>
 	<script src="app/assets/js/scripts.js"></script>
 	<script src="app/assets/js/init.js"></script>
     
