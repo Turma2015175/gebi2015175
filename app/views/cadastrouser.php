@@ -80,7 +80,7 @@
 		<br><br>
 	
 	
-	
+	<fieldset>
 	<legend>Meu Endereço</legend>
 	
 	<tr>
@@ -389,3 +389,4 @@
 	<input type="submit" value="Finalizar Cadastro" id="Enviar"/>
 	
 	</form>
+	</fieldset>
