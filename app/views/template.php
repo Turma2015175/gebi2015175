@@ -30,7 +30,8 @@
 		<img src="app/assets/img/preloader.gif" alt="" title="" />
 	</div>
 	
-	<div class="container" id="site">
+	<div id="site">
+	<div class="container">
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
@@ -67,6 +68,7 @@
 		<br/>
 		<br/>
 		<br/>
+	</div>
 		<div id="conteudo">	<!-- add para ajudar na responsividade do footer-->
 			<?php require $url; ?>
 		</div>
@@ -76,6 +78,7 @@
 			<a href="http://www.maujor.com/tutorial/rodape-embaixo-da-janela.php" target="_blank"> Retirado daqui </a>
 		</footer>
 	</div>
+	
 
     
     <script src="app/assets/js/jquery.min.js"></script>

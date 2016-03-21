@@ -1,5 +1,7 @@
 #site{
 	display:none;
+	min-height: 100%;
+	position: relative;
 }
 #preloader{
 	position: absolute;
@@ -16,10 +18,6 @@ html, body {
 	height: 100%;
 }
 
-#site{
-	min-height: 100%;
-	position: relative;
-	}
 
 * html #site {
 	height: 100%; /* hack para IE6 que trata height como min-height */
