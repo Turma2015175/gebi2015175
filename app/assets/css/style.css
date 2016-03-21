@@ -11,3 +11,26 @@
 	margin: -32px 0 0 -32px;
 	
 }
+
+html, body {
+	height: 100%;
+}
+
+#site{
+	min-height: 100%;
+	position: relative;
+	}
+
+* html #site {
+	height: 100%; /* hack para IE6 que trata height como min-height */
+	}
+footer{
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	background:black; /*somente para visualização*/
+}
+
+#conteudo {
+	padding-bottom: 30px;
+	}

@@ -67,13 +67,14 @@
 		<br/>
 		<br/>
 		<br/>
-		<?php require $url; ?>
+		<div id="conteudo">	<!-- add para ajudar na responsividade do footer-->
+			<?php require $url; ?>
+		</div>
 		
-		<footer class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-			<div class="container">
-				Radapé extraido <a href="https://bootstrapbay.com/blog/bootstrap-tutorial-fixed-footer/" target="_blank"> Daqui </a>
-			</div>
-		</footer><!-- a única diferença dessa utilização para a do video do link e que troquei a DIV por footer pq achei semanticamente mais correto-->
+		<!--Este footer está configurado para estar sempre abaixo da pagina mesmo quando a página tem pouco conteudo-->
+		<footer>
+			<a href="http://www.maujor.com/tutorial/rodape-embaixo-da-janela.php" target="_blank"> Retirado daqui </a>
+		</footer>
 	</div>
 
     
