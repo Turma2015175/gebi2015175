@@ -67,8 +67,13 @@
 		<br/>
 		<br/>
 		<br/>
-
 		<?php require $url; ?>
+		
+		<footer class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+			<div class="container">
+				Radapé extraido <a href="https://bootstrapbay.com/blog/bootstrap-tutorial-fixed-footer/" target="_blank"> Daqui </a>
+			</div>
+		</footer><!-- a única diferença dessa utilização para a do video do link e que troquei a DIV por footer pq achei semanticamente mais correto-->
 	</div>
 
     
