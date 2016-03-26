@@ -387,6 +387,6 @@
 	</select>
 	<br><br>
 	<input type="submit" value="Finalizar Cadastro" id="Enviar"/>
-	
-	</form>
 	</fieldset>
+</form>
+	
