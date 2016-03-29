@@ -32,3 +32,15 @@ footer{
 #conteudo {
 	padding-bottom: 30px;
 	}
+
+header{
+	height:160px;
+	border:1px solid #fff;
+}	
+header img {
+	float:left;
+}
+header h1{
+	font-size:80px;
+	margin-top:40px;
+}
