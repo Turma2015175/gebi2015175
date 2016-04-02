@@ -15,13 +15,12 @@
 		$email = trim(strip_tags(addslashes(filter_input(INPUT_POST,"email"))));
 		$senha = trim(strip_tags(addslashes(filter_input(INPUT_POST,"senha"))));
 		
-		$sql = "SELECT * FROM usuario WHERE email = ? AND senha = ?";
+		$sql = "SELECT * FROM usuarios WHERE email = ? AND senha = ?";
 		
 		$stmt = $con->prepare($sql);
 		$stmt->bindValue(1, $email); 
 		$stmt->bindValue(2, sha1($senha));
 		$resul = $stmt->execute();
-		
 
 		if ($stmt->rowCount() > 0)
 		{

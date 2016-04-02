@@ -1,6 +1,6 @@
 <?php
 
-	$dsn 	= "mysql:dbname=empresa_2015175; host=localhost";
+	$dsn 	= "mysql:dbname=scrinia; host=localhost";
 	$user 	= "root";
 	$pass	= "";
 

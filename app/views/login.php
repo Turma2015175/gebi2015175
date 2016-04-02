@@ -1,6 +1,9 @@
 
 <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+
+	
 	<h3>Login</h3>
+	<div id="feedback"></div>
 	<form id="formLogin" novalidate>
 		  <div class="form-group">
 				<label for="email" class="sr-only">E-mail</label>
