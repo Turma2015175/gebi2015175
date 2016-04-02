@@ -1,7 +1,17 @@
+*{
+font-family:arial,verdana,sans-serif;
+padding:0;
+margin:0;
+text-decoration:none;
+list-style-type:none;
+}
+
 #site{
 	display:none;
 	min-height: 100%;
 	position: relative;
+	overflow:auto;
+	//border:1px solid blue;//borda de marcação para melhor visualização
 }
 #preloader{
 	position: absolute;
@@ -22,18 +32,8 @@ html, body {
 * html #site {
 	height: 100%; /* hack para IE6 que trata height como min-height */
 	}
-footer{
-	position: absolute;
-	bottom: 0;
-	width:100%;
-	background:black; /*somente para visualização*/
-}
 
-#conteudo {
-	padding-bottom: 30px;
-	}
-
-header{
+	header{
 	height:160px;
 	border:1px solid #fff;
 }	
@@ -44,3 +44,36 @@ header h1{
 	font-size:80px;
 	margin-top:40px;
 }
+
+#conteudo {
+	padding-bottom: 90px;
+	//border: 1px solid red; //borda de marcação para melhor visualização
+	}
+.navbar, footer{
+	background: #c9bd96;
+}	
+footer{
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	padding:2px 2.5%;
+	
+	
+}
+
+footer ul{
+	border-bottom: 1px solid;
+	width:100%;
+	overflow:auto;
+	padding:10px;
+	text-align:center;
+}
+footer li{
+	display:inline; 
+}
+
+footer a {
+	color: #000;
+}
+
+

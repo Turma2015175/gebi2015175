@@ -36,7 +36,7 @@
 			<img src="app/assets/img/logoM.png" alt="" title="" />
 			<h1> GEBI2015175</h1>
 		</header>
-		<nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-default">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -48,37 +48,41 @@
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="/">Home</a></li>
-						<li><a href='/quemsomos'>Quem Somos</a></li>
+						<li><a href="./home">Home</a></li>
+						<li><a href='./quemsomos'>Quem Somos</a></li>
 					
 					</ul>
-					<div id="navbar" class="navbar-right">
+					<div id="navbar" class="navbar-left">
 						<form class="navbar-form">
 							<div class="form-group">
 								<input placeholder="Email" class="form-control" type="text">
 							</div>
 							<div class="form-group">
-								<input placeholder="Password" class="form-control" type="password">
+								<input placeholder="Senha" class="form-control" type="password">
 							</div>
 							<button type="submit" class="btn btn-success">Entrar</button>
-							<a class="btn btn-primary" href="/cadastrouser">Cadastro</a>
+							<a class="btn btn-primary" href="./cadastrouser">Cadastro</a>
 						</form>
 						
 					</div>
 				</div><!--/.nav-collapse -->
 			</div>
 		</nav>
-		<br/>
-		<br/>
-		<br/>
-	</div>
-		<div id="conteudo">	<!-- add para ajudar na responsividade do footer-->
-			<?php require $url; ?>
-		</div>
 		
+	
+		<main id="conteudo">	<!-- add para ajudar na responsividade do footer-->
+			<?php require $url; ?>
+		</main>
+	</div>	
 		<!--Este footer está configurado para estar sempre abaixo da pagina mesmo quando a página tem pouco conteudo-->
 		<footer>
-			<a href="http://www.maujor.com/tutorial/rodape-embaixo-da-janela.php" target="_blank"> Retirado daqui </a>
+			<ul>
+				<li><a href="./home">Home |</li>
+				<li><a href="./quemsomos">Quem Somos |</li>
+				<li><a href="./login">Login |</li>
+				<li><a href="./cadastrouser">Cadastro</li>				
+			</ul>
+			<p> @Copyright 2016. Todos os direitos reservados. 
 		</footer>
 	</div>
 	
