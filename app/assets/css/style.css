@@ -57,8 +57,11 @@ header h1{
 	font-size:1.5em;
 	
 }
-.navbar-nav {
-	color: #000;
+.navbar-default .navbar-nav>li>a{
+	color:#fff;
+}
+.navbar-right{
+	margin-right:8%;
 }
 footer{
 	position: absolute;
