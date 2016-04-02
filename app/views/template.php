@@ -15,7 +15,7 @@
    
     <title>GEBI 2015175 | <?php echo $title; ?></title>
 
-    
+    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700italic' rel='stylesheet' type='text/css'>
     <link href="app/assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="app/assets/css/style.css" rel="stylesheet" />
 	
@@ -55,7 +55,7 @@
 						<li><a href='./quemsomos'>Quem Somos</a></li>
 					
 					</ul>
-					<div id="navbar" class="navbar-left">
+					<div id="navbar" class="navbar-right">
 						<form class="navbar-form">
 							<div class="form-group">
 								<a class="btn btn-success" href="./login">Entrar</a>
