@@ -55,13 +55,13 @@
 					<div id="navbar" class="navbar-left">
 						<form class="navbar-form">
 							<div class="form-group">
-								<input placeholder="Email" class="form-control" type="text">
+								<a class="btn btn-success" href="./login">Entrar</a>
 							</div>
 							<div class="form-group">
-								<input placeholder="Senha" class="form-control" type="password">
+								<a class="btn btn-primary" href="./cadastrouser">Cadastro</a>
 							</div>
-							<button type="submit" class="btn btn-success">Entrar</button>
-							<a class="btn btn-primary" href="./cadastrouser">Cadastro</a>
+							
+						
 						</form>
 						
 					</div>
