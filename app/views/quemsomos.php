@@ -5,18 +5,18 @@
 
 <p>	
 	<h2>Um grupo, uma ideia</h2>
-	Somos uma turma do SENAI Maracanã-RJ que tinha um desafio: Um projeto final.<br>
+	Somos uma turma do SENAI MaracanÃ£-RJ que tinha um desafio: Um projeto final.<br>
 	Ao nos reunirmos para decidir o que fazer em nosso projeto final, decidimos realizar algo que pudesse ajudar outras pessoas.
-	A ideia nasceu da nescessidade que todo estudante tem: ter acesso a informação.<br> 
-	Nos dias de hoje, com o advento da internet, o acesso a informação ficou muito fácil; alguns clicks e você já pode encontrar o que quiser na web.
-	Porém, apesar da vasta informação digitalizada que existe, ainda há a inegável relação que temos com os livros, o livro ainda é um dos meios mais comuns e agradáveis de se instruir. Pensando nessa relação, é que construimos nossa ideia.</P>
+	A ideia nasceu da nescessidade que todo estudante tem: ter acesso a informaÃ§Ã£o.<br> 
+	Nos dias de hoje, com o advento da internet, o acesso a informaÃ§Ã£o ficou muito fÃ¡cil; alguns clicks e vocÃª jÃ¡ pode encontrar o que quiser na web.
+	PorÃ©m, apesar da vasta informaÃ§Ã£o digitalizada que existe, ainda hÃ¡ a inegÃ¡vel relaÃ§Ã£o que temos com os livros, o livro ainda Ã© um dos meios mais comuns e agradÃ¡veis de se instruir. Pensando nessa relaÃ§Ã£o, Ã© que construimos nossa ideia.</P>
 <p>
 <h2>GEBI2015175</h2>
-		A GEBI2015175 é uma aplicação web de gestão de bibliotecas e livros, a qual tem a finalidade de unir o melhor dos dois mundos:
-	a facilidade e a agilidade da internet com a satisfação e praticidade de ter um livro físico em mãos.<br><br>
-<strong>Você precisa de um livro para suas pesquisas ou estudos? </strong>Simples.<br> Na GEBI2015175 você fará uma pesquisa rápida pelo título ou nome do autor, e ela indicará quais bibliotecas o têm em catálogo.
-Como você pode perceber, não somente ajudamos você ou a qualquer outro estudante a encontrar o livro que quer, como também temos o interesse de fomentar o hábito da leitura e o encontro entre as pessoas e a biblioteca, 
-que é um dos mais importantes símbolos de uma comunidade que se importa com a educação. 
+		A GEBI2015175 Ã© uma aplicaÃ§Ã£o web de gestÃ£o de bibliotecas e livros, a qual tem a finalidade de unir o melhor dos dois mundos:
+	a facilidade e a agilidade da internet com a satisfaÃ§Ã£o e praticidade de ter um livro fÃ­sico em mÃ£os.<br><br>
+<strong>VocÃª precisa de um livro para suas pesquisas ou estudos? </strong>Simples.<br> Na GEBI2015175 vocÃª farÃ¡ uma pesquisa rÃ¡pida pelo tÃ­tulo ou nome do autor, e ela indicarÃ¡ quais bibliotecas o tÃªm em catÃ¡logo.
+Como vocÃª pode perceber, nÃ£o somente ajudamos vocÃª ou a qualquer outro estudante a encontrar o livro que quer, como tambÃ©m temos o interesse de fomentar o hÃ¡bito da leitura e o encontro entre as pessoas e a biblioteca, 
+que Ã© um dos mais importantes sÃ­mbolos de uma comunidade que se importa com a educaÃ§Ã£o. 
 </p>
 <p>
 <h2> A equipe</h2>
@@ -25,10 +25,10 @@ que é um dos mais importantes símbolos de uma comunidade que se importa com a ed
 	<li>roberta</li>
 	<li>lorenna</li>
 	<li>lucas</li>
-	<li>raphael</li>
+	<li>rafael</li>
 	<li>luiz</li>
-	<li>lário</li>
-	<li>ícaro</li>
+	<li>lÃ¡rio</li>
+	<li>Ã­caro</li>
 	<li>robson</li>
 	<li>francisco</li>
 	<li>vitor</li>
