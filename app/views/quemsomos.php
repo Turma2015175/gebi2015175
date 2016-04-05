@@ -1,3 +1,6 @@
+<?php
+	 $title="Quem Somos";
+?>
 <h2>Quem Somos</h2>
 
 <p>	
@@ -22,7 +25,7 @@ que é um dos mais importantes símbolos de uma comunidade que se importa com a 
 	<li>roberta</li>
 	<li>lorenna</li>
 	<li>lucas</li>
-	<li>raphael</li>
+	<li>rafael</li>
 	<li>luiz</li>
 	<li>lário</li>
 	<li>ícaro</li>
@@ -34,3 +37,6 @@ que é um dos mais importantes símbolos de uma comunidade que se importa com a 
 	<li>romulo</li>
 	<li>fernando</li>
 </ul>
+<h2>Agradecimentos</h2>
+
+
