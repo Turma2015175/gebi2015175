@@ -51,7 +51,11 @@
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="./home">Home</a></li>
+						<li><a href=<?php
+					if(!empty($_SESSION['nome'])){
+						echo '"./usuarios"';
+					}else{echo '"./home"';}?>
+					>Home</a></li>
 						<li><a href='./quemsomos'>Quem Somos</a></li>
 					
 					</ul>
@@ -60,7 +64,7 @@
 					if(!empty($_SESSION['token']) || !empty($_SESSION['nome']) || !empty($_SESSION['id'])){
 						echo '
 						<form class="navbar-form">
-							<div class="form-group"><a href="./home" type="button" class="btn btn-success">'.$_SESSION['nome']."</a>
+							<div class="form-group"><a href="./usuarios" type="button" class="btn btn-success">'.$_SESSION['nome']."</a>
 								
 							</div>
 							<div class='form-group'>
@@ -95,10 +99,19 @@
 		<!--Este footer está configurado para estar sempre abaixo da pagina mesmo quando a página tem pouco conteudo-->
 		<footer>
 			<ul>
-				<li><a href="./home">Home</a> |</li>
+				<li><a href=<?php
+					if(!empty($_SESSION['nome'])){
+						echo '"./usuarios"';
+					}else{echo '"./home"';}?>>Home</a> |</li>
 				<li><a href="./quemsomos">Quem Somos</a>  |</li>
-				<li><a href="./login">Login</a>  |</li>
-				<li><a href="./cadastrouser">Cadastro</a> </li>				
+				<li><a href=<?php
+					if(!empty($_SESSION['nome'])){
+						echo '"./usuarios"';
+					}else{echo '"./login"';}?>>Login</a>  |</li>
+				<li><a href=<?php
+					if(!empty($_SESSION['nome'])){
+						echo '"./usuarios"';
+					}else{echo '"./cadastrouser"';}?>>Cadastro</a> </li>				
 			</ul>
 			<p> @Copyright 2016. Todos os direitos reservados.</p> 
 		</footer>
