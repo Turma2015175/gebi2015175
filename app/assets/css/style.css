@@ -55,7 +55,8 @@ header{
 	}
 
 #conteudo {
-	padding-bottom: 90px;
+	padding-bottom: 120px;
+	overflow:auto;
 	//border: 1px solid red; 
 	}
 .navbar, footer{
@@ -103,7 +104,7 @@ footer a {
 		text-align:center;
 	}
 	header img {
-		margin-left:40%
+		margin-left:35%
 	}
 	
 	#conteudo {
@@ -112,7 +113,7 @@ footer a {
 
 @media only screen and (max-width: 630px){
 header{
-	height:160px;
+	height:180px;
 }
 	header h1 {
 		font-size:60px;
