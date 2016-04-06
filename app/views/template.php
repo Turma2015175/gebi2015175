@@ -56,17 +56,32 @@
 					
 					</ul>
 					<div id="navbar" class="navbar-right">
+					<?php
+					if(!empty($_SESSION['token']) || !empty($_SESSION['nome']) || !empty($_SESSION['id'])){
+						echo '
 						<form class="navbar-form">
-							<div class="form-group">
-								<a class="btn btn-success" href="./login">Entrar</a>
+							<div class="form-group"><a href="./home" type="button" class="btn btn-success">'.$_SESSION['nome']."</a>
+								
 							</div>
-							<div class="form-group">
-								<a class="btn btn-primary" href="./cadastrouser">Cadastro</a>
+							<div class='form-group'>
+								<a class='btn btn-danger' href='#'>Sair</a>
 							</div>
 							
 						
-						</form>
+					</form>";
+			
+					}else{ echo "
+						<form class='navbar-form'>
+							<div class='form-group'>
+								<a class='btn btn-success' href='./login'>Entrar</a>
+							</div>
+							<div class='form-group'>
+								<a class='btn btn-primary' href='./cadastrouser'>Cadastro</a>
+							</div>
+							
 						
+						</form>";}
+					?>	
 					</div>
 				</div><!--/.nav-collapse -->
 			</div>

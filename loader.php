@@ -16,10 +16,21 @@
 			include_once BASE_PATH . "/app/services/functions/seguranca.php";
 			valida();
 		}
-		$url = BASE_PATH . DS . "app" . DS . "views" . DS .  $get . ".php";
+		
 		$title = ucfirst($get);
-		$menu = BASE_PATH . DS . "app" . DS . "views" . DS . "menu.html";
-		$menu = ($get == "login") ? null : file_get_contents($menu);
+
+		if(!empty($_SESSION['token']) || !empty($_SESSION['nome']) || !empty($_SESSION['id'])){
+			echo $get;
+			if ($get == "home"){
+				
+				$url = BASE_PATH . DS . "app" . DS . "views" . DS .  "usuarios" . ".php";
+			}
+			else{
+			$url = BASE_PATH . DS . "app" . DS . "views" . DS .  $get . ".php";
+		}
+		}else{
+			$url = BASE_PATH . DS . "app" . DS . "views" . DS .  $get . ".php";
+		}
 			
 	    }
 	else

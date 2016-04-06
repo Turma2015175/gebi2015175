@@ -2,8 +2,8 @@
 	
 	
 	// localhost //
-	$dsn 	= "mysql:dbname=u890064372_scrin; host=localhost";
-	$user 	= "";
+	$dsn 	= "mysql:dbname=scrinia; host=localhost";
+	$user 	= "root";
 	$pass	= "";
 	
 	// Servidor //

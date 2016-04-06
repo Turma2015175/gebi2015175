@@ -31,7 +31,7 @@
 			session_start();
 			$_SESSION['nome'] = $dados['nome'];
 			$_SESSION['token'] = md5($dados['email']);
-			$_SESSION['id'] = $dados['id'];
+			$_SESSION['id'] = $dados['idUsuario'];
 			
 			$info = array('erro' => false);
 			

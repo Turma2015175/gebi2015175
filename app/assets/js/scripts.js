@@ -80,6 +80,7 @@ function Usuario(){
 					$("#feedback").append(alerta);
 					return false;
 				}else{
+					location.href="./usuarios";
 				}
 			});
 		}
