@@ -25,7 +25,7 @@ que é um dos mais importantes símbolos de uma comunidade que se importa com a ed
 	<li>roberta</li>
 	<li>lorenna</li>
 	<li>lucas</li>
-	<li>raphael</li>
+	<li>rafael</li>
 	<li>luiz</li>
 	<li>lário</li>
 	<li>ícaro</li>
