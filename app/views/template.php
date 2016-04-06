@@ -95,12 +95,12 @@
 		<!--Este footer está configurado para estar sempre abaixo da pagina mesmo quando a página tem pouco conteudo-->
 		<footer>
 			<ul>
-				<li><a href="./home">Home |</li>
-				<li><a href="./quemsomos">Quem Somos |</li>
-				<li><a href="./login">Login |</li>
-				<li><a href="./cadastrouser">Cadastro</li>				
+				<li><a href="./home">Home</a> |</li>
+				<li><a href="./quemsomos">Quem Somos</a>  |</li>
+				<li><a href="./login">Login</a>  |</li>
+				<li><a href="./cadastrouser">Cadastro</a> </li>				
 			</ul>
-			<p> @Copyright 2016. Todos os direitos reservados. 
+			<p> @Copyright 2016. Todos os direitos reservados.</p> 
 		</footer>
 	</div>
 	
