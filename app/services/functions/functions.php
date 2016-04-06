@@ -3,12 +3,14 @@
 	require_once BASE_PATH . DS . "database". DS . "conexao.php";
 	
 	
-	switch($get)
-	{ 
-		case 	"login":
-				login($con);
-				break;
-	}			
+	switch($get){
+		case "login":
+			login($con);
+		break;
+		case "cadastrarUsuario":
+			cadastrarUsuario($con);
+		break;	
+	}	
 
 	function login($con)
 	{
@@ -28,6 +30,8 @@
 			
 			session_start();
 			$_SESSION['nome'] = $dados['nome'];
+			$_SESSION['token'] = md5($dados['email']);
+			$_SESSION['id'] = $dados['id'];
 			
 			$info = array('erro' => false);
 			

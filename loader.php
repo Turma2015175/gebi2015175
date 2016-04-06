@@ -1,25 +1,9 @@
 <?php
-	/*
-	(string) = transforma em string
-	trim() = remove todos os espaços
-	*/
-	#$get = (string) trim(addslashes(strip_tags($_GET['param'])));
-	
 	
 	$get = (string) trim(addslashes(strip_tags(filter_input(INPUT_GET,"param", FILTER_SANITIZE_STRING))));
 		
-	/* $allow = array("login","painel");
 	
-	if(in_array($get, $allow))
-	{
-		echo $get;
-	}
-	else
-	{
-		echo " Erro 404";
-	} */
-	
-	$allow = array("login","quemsomos", "cadastrouser","cadastrolivro", "home", "emprestimo");
+	$allow = array("login","quemsomos", "cadastrouser","cadastrolivro", "home", "emprestimo","usuarios");
 	
 	if(empty($get)){
 		$url = BASE_PATH . DS . "app" . DS . "views" . DS . "home" . ".php";
@@ -27,7 +11,15 @@
 	elseif(in_array($get, $allow))
 	    {
 		
-			$url = BASE_PATH . DS . "app" . DS . "views" . DS . $get . ".php";
+		$restritas = ["usuarios"];
+		if(in_array($get, $restritas)){
+			include_once BASE_PATH . "/app/services/functions/seguranca.php";
+			valida();
+		}
+		$url = BASE_PATH . DS . "app" . DS . "views" . DS .  $get . ".php";
+		$title = ucfirst($get);
+		$menu = BASE_PATH . DS . "app" . DS . "views" . DS . "menu.html";
+		$menu = ($get == "login") ? null : file_get_contents($menu);
 			
 	    }
 	else
