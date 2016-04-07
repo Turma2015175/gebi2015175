@@ -5,6 +5,6 @@
 		E uma aplicacao web de gerenciamento de bibliotecas.</p>
 		<br/>
 		<br/>
-		<img src="C:/wamp/www/gebi2015175/app/assets/img/construcao.gif" alt="" title="" /> <!-- fiz a alteracao para verificar o funcionamento-->
+		<img src="app/assets/img/construcao.gif" alt="" title="" /> <!-- fiz a alteracao para verificar o funcionamento-->
 			
 </div>		
