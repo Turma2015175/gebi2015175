@@ -1,42 +1,165 @@
-<?php
-	 $title="Quem Somos";
-?>
-<h2>Quem Somos</h2>
 
-<p>	
-	<h2>Um grupo, uma ideia</h2>
-	Somos uma turma do SENAI Maracan„-RJ que tinha um desafio: Um projeto final.<br>
-	Ao nos reunirmos para decidir o que fazer em nosso projeto final, decidimos realizar algo que pudesse ajudar outras pessoas.
-	A ideia nasceu da nescessidade que todo estudante tem: ter acesso a informaÁ„o.<br> 
-	Nos dias de hoje, com o advento da internet, o acesso a informaÁ„o ficou muito f·cil; alguns clicks e vocÍ j· pode encontrar o que quiser na web.
-	PorÈm, apesar da vasta informaÁ„o digitalizada que existe, ainda h· a ineg·vel relaÁ„o que temos com os livros, o livro ainda È um dos meios mais comuns e agrad·veis de se instruir. Pensando nessa relaÁ„o, È que construimos nossa ideia.</P>
-<p>
-<h2>GEBI2015175</h2>
-		A GEBI2015175 È uma aplicaÁ„o web de gest„o de bibliotecas e livros, a qual tem a finalidade de unir o melhor dos dois mundos:
-	a facilidade e a agilidade da internet com a satisfaÁ„o e praticidade de ter um livro fÌsico em m„os.<br><br>
-<strong>VocÍ precisa de um livro para suas pesquisas ou estudos? </strong>Simples.<br> Na GEBI2015175 vocÍ far· uma pesquisa r·pida pelo tÌtulo ou nome do autor, e ela indicar· quais bibliotecas o tÍm em cat·logo.
-Como vocÍ pode perceber, n„o somente ajudamos vocÍ ou a qualquer outro estudante a encontrar o livro que quer, como tambÈm temos o interesse de fomentar o h·bito da leitura e o encontro entre as pessoas e a biblioteca, 
-que È um dos mais importantes sÌmbolos de uma comunidade que se importa com a educaÁ„o. 
-</p>
-<p>
-<h2> A equipe</h2>
+      <hr class="featurette-divider">
 
-<ul style="list-style-type:none">
-	<li>roberta</li>
-	<li>lorenna</li>
-	<li>lucas</li>
-	<li>rafael</li>
-	<li>luiz</li>
-	<li>l·rio</li>
-	<li>Ìcaro</li>
-	<li>robson</li>
-	<li>francisco</li>
-	<li>vitor</li>
-	<li>wendel</li>
-	<li>marcelo</li>
-	<li>romulo</li>
-	<li>fernando</li>
-</ul>
-<h2>Agradecimentos</h2>
+      <h2>Nossa Equipe</h2>
 
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Lorenna <span class="text-muted">frase inpiradora</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/lorenna.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Roberta <span class="text-muted">frase inpiradora</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/roberta.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Fernando <span class="text-muted">frase inpiradora</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/fernando.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Francisco<span class="text-muted">frase inpiradora</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/francisco.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">√çcaro <span class="text-muted">frase inpiradora</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/icaro.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">L√°rio <span class="text-muted">frase inpiradora</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/lario.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Lucas <span class="text-muted">frase inpiradora</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/lucas.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Luiz <span class="text-muted">frase inpiradora</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/luiz.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Marcelo <span class="text-muted">frase inpiradora</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/marcelo.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Rafael <span class="text-muted">frase inpiradora</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/rafael.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Robson <span class="text-muted">frase inpiradora</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/robson.jpg" alt="">
+        </div>
+      </div>
+	  
+	<hr class="featurette-divider">
+	
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">R√¥mulo <span class="text-muted">frase inpiradora</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/romulo.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+<hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">V√≠tor<span class="text-muted">frase inpiradora</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5 ">
+          <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/vitor.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Wendel<span class="text-muted">frase inpiradora</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5  col-md-pull-7">
+          <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/wendel.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
 
