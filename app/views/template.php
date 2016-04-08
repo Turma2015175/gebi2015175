@@ -56,7 +56,7 @@
 						echo '"./usuarios"';
 					}else{echo '"./home"';}?>
 					>Home</a></li>
-						<li><a href='./quemsomos'>Quem Somos</a></li>
+						<li><a href='./quemsomos'>Criadores</a></li>
 					
 					</ul>
 					<div id="navbar" class="navbar-right">
