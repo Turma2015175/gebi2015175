@@ -4,7 +4,7 @@
 
 <!DOCTYPE html>
 
-<html lang="pt-br" >
+<html lang="pt-br" />
   <head>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,8 +35,9 @@
 	
 	<div id="site">
 	<div class="col-xs-10 col-xs-offset-1">
-		<header>			
-			<h1><span id="logo-img"></span> Scrinia</h1>
+		<header>
+			<img class="img-responsive" src="app/assets/img/logoM.png" alt="" title="" />
+			<h1> GEBI2015175</h1>
 		</header>
 		<nav class="navbar navbar-default">
 			<div class="container">
@@ -55,7 +56,7 @@
 						echo '"./usuarios"';
 					}else{echo '"./home"';}?>
 					>Home</a></li>
-						<li><a href='./quemsomos'>Criadores</a></li>
+						<li><a href='./quemsomos'>Quem Somos</a></li>
 					
 					</ul>
 					<div id="navbar" class="navbar-right">
