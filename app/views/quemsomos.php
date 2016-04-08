@@ -43,7 +43,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7 col-md-push-5">
-		  <h2 class="featurette-heading">Francisco<span class="text-muted">frase inpiradora</span></h2>
+		  <h2 class="featurette-heading">Francisco <span class="text-muted">frase inpiradora</span></h2>
 		  <p class="lead"></p>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
@@ -149,7 +149,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7">
-		  <h2 class="featurette-heading">Vítor<span class="text-muted">frase inpiradora</span></h2>
+		  <h2 class="featurette-heading">Vítor <span class="text-muted">frase inpiradora</span></h2>
 		  <p class="lead"></p>
 		</div>
 		<div class="col-md-5 ">
@@ -161,11 +161,10 @@
 
 	<div class="row featurette">
 		<div class="col-md-7 col-md-push-5">
-		  <h2 class="featurette-heading">Wendel<span class="text-muted">frase inpiradora</span></h2>
+		  <h2 class="featurette-heading">Wendel <span class="text-muted">frase inpiradora</span></h2>
 		  <p class="lead"></p>
 		</div>
 		<div class="col-md-5  col-md-pull-7">
 		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/wendel.jpg" alt="Generic placeholder image">
 		</div>
 	</div>
-

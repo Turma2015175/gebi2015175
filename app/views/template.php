@@ -1,10 +1,10 @@
 <?php 
-	header('Content-type: text/html; charset=utf-8');
+	header('Content-type: text/html; charset=ISO-8859-1');
 ?>
 
 <!DOCTYPE html>
 
-<html lang="pt-br" />
+<html lang="pt-br" >
   <head>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
