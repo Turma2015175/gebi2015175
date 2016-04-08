@@ -38,19 +38,22 @@ img {
 	}
 
 header{
-	height:220px;
+	//height:180px;
+	overflow:auto;
 	//border:1px solid blue;
 }	
-	header img {
+	#logo-img {
 		display:block;
-		width:30%;
+		background-image: url(../img/logoM.png) ;
+		background-repeat:no-repeat;
+		width:240px;
+		height:152px;
 		float:left;
 		//border:1px solid red;
 	}
 	header h1{
-		font-size:80px;
-		margin:50px 0 0 10px;
-		float:left;
+		font-size:120px;
+		//float:left;
 		//border:1px solid green;
 	}
 
@@ -98,34 +101,28 @@ footer a {
 }
 
 @media only screen and (max-width: 910px){
-	header h1 {
-		margin-top:0;
-		float:none;
+	header h1{
 		text-align:center;
 	}
-	header img {
-		margin-left:35%
-	}
-	
+	#logo-img{
+		float:none;
+		margin:0 auto;
+	}	
 	#conteudo {
 	padding-bottom: 180px;
 }
 
 @media only screen and (max-width: 630px){
-header{
-	height:180px;
-}
+
 	header h1 {
 		font-size:60px;
 	}
-	
+	#logo-img {
+	//	background-image: url(../img/logoP.png) ;
+	}
 }
 @media only screen and (max-width: 510px){
-header{
-	height:100px;
-}
-	header h1 {
-		font-size:40px;
-	}
+
+	
 }
 
