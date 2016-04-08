@@ -100,6 +100,14 @@ footer a {
 	color: #000;
 }
 
+/*view livros*/
+
+.livros-secao{
+	margin-bottom:30px;
+	overflow:auto;
+	
+}
+
 @media only screen and (max-width: 910px){
 	header h1{
 		text-align:center;
