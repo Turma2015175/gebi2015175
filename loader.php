@@ -11,7 +11,7 @@
 	elseif(in_array($get, $allow))
 	    {
 
-		$restritas = ["usuarios"];
+		$restritas = [""];
 		if(in_array($get, $restritas)){
 			include_once BASE_PATH . "/app/services/functions/seguranca.php";
 			valida();

@@ -16,6 +16,7 @@
     <title>GEBI 2015175 | <?php echo $title; ?></title>
 
     <link href='https://fonts.googleapis.com/css?family=Arvo:400,700italic' rel='stylesheet' type='text/css'>
+    <link href="app/assets/css/jquery.bxslider.css" rel="stylesheet" />
     <link href="app/assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="app/assets/css/style.css" rel="stylesheet" />
 	
@@ -120,6 +121,7 @@
     
     <script src="app/assets/js/jquery.min.js"></script>
 	<script src="app/assets/js/jquery.validate.min.js"></script>
+	<script src="app/assets/js/jquery.bxslider.min.js"></script>
 	<script src="app/assets/js/bootstrap.min.js"></script>
 	<script src="app/assets/js/scripts.js"></script>
 	<script src="app/assets/js/init.js"></script>

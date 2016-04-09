@@ -87,3 +87,8 @@ function Usuario(){
 		
 	});
 };
+
+$('.bxslider').bxSlider({
+  mode: 'fade',
+  captions: true
+});
