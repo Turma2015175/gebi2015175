@@ -1,6 +1,6 @@
 <form action="" method="" id="formulario">
 	<fieldset>
-		<legend>Cadastro de Usu·rio</legend>
+		<legend>Cadastro de Usu√°rio</legend>
 		
 		
 		<label class="cadastro" class="cadastro" for="nome">Nome:</label>
@@ -13,7 +13,7 @@
 		<label class="cadastro" for="email_pessoal">Email:</label>
 		<input type="email" id="email_pessoal" name="email_pessoal" placeholder="Digite seu Email."/>
 		
-		<label class="cadastro" for="repita_email_pessoal">ConfirmaÁ„o de Email:</label>
+		<label class="cadastro" for="repita_email_pessoal">Confirma√ß√£o de Email:</label>
 		<input type="email" id="repita_email_pessoal" name="repita_email_pessoal" placeholder="Repita seu Email." /><br><br>
 		
 		
@@ -42,15 +42,15 @@
 		<label class="cadastro" class="cadastro" for="senha">Senha:</label>
 		<input type="password" id="senha" name="senha" placeholder="Informe uma Senha."/> 
 
-		<label class="cadastro" class="cadastro" for="senha">ConfirmaÁ„o de Senha:</label>
+		<label class="cadastro" class="cadastro" for="senha">Confirma√ß√£o de Senha:</label>
 		<input type="password" id="senha" name="senha" placeholder="Repita sua Senha."/><br><br>
 		
 		
-		<label>Informe seu gÍnero favorito:</label><br>		
+		<label>Informe seu g√™nero favorito:</label><br>		
 		<label  class="cadastro" for="biografia">Biografia</label>
 		<input type="checkbox" id="biografia" name="biografia"/>
 										
-		<label  class="cadastro" for="comedia">ComÈdia</label>
+		<label  class="cadastro" for="comedia">Com√©dia</label>
 		<input type="checkbox" id="comedia" name="comedia"/>
 
 		<label  class="cadastro" for="drama">Drama</label>
@@ -59,16 +59,16 @@
 		<label  class="cadastro" for="estudos">Estudos</label>
 		<input type="checkbox" id="estudos" name="estudos"/>
 
-		<label  class="cadastro" for="ficcao">FicÁ„o</label>
+		<label  class="cadastro" for="ficcao">Fic√ß√£o</label>
 		<input type="checkbox" id="ficcao" name="ficcao"/><br><br>
 
 		<label  class="cadastro" for="poesia">Poesia</label>
 		<input type="checkbox" id="poesia" name="poesia"/>
 									
-		<label  class="cadastro" for="romantico">Rom‚nce</label>
+		<label  class="cadastro" for="romantico">Romance</label>
 		<input type="checkbox" id="romantico" name="romantico"/>
 
-		<label  class="cadastro" for="policial">Rom‚nce Policial</label>
+		<label  class="cadastro" for="policial">Romance Policial</label>
 		<input type="checkbox" id="policial" name="policial"/>
 								
 		<label  class="cadastro" for="terror">Terror</label>
@@ -81,10 +81,10 @@
 	
 	
 	<fieldset>
-	<legend>Meu EndereÁo</legend>
+	<legend>Meu Endere√ßo</legend>
 	
 	<tr>
-			<Label>PaÌs</Label>
+			<Label>Pa√≠s</Label>
 			<select id="PaÌs" name="PaÌs">
 		<option selected="selected">Selecione...</option>
 		<option value="Brasil" >Brasil</option>
@@ -341,16 +341,16 @@
 	</tr> 
 	<br><br>
 	
-	<label  class="endereÁo" for="cep">Cep</label>
+	<label  class="endereco" for="cep">Cep</label>
 	<input type="text" id="cep" name="cep" placeholder="Digite seu Cep"/>
 	
-	<label  class="endereÁo" for="endereÁo" >EndereÁo</label>
+	<label  class="endereco" for="endereÁo" >Endere√ßo</label>
 	<input type="text" id="end" name="endereÁo" size="50" placeholder="Digite seu EndereÁo"/>
 		
-	<label class="endereÁo" for="numero">N˙mero</label>
+	<label class="endereco" for="numero">N√∫mero</label>
 	<input type="text" id="numEnd" name="numero" size="5" placeholder="n∫ rua"/><br><br>
 	
-	<label class="endereÁo" for="bairro">Bairro</label>
+	<label class="endereco" for="bairro">Bairro</label>
 	<input type="text" id="bairro" name="bairro" placeholder="Digite seu Bairro"/>
 	
 	<label>Estado</label>	
@@ -359,29 +359,29 @@
 	<option value="0">Selecione o Estado</option>
 	<option value="ac">Acre</option>
 	<option value="al">Alagoas</option>
-	<option value="ap">Amap·</option>
+	<option value="ap">Amap√°</option>
 	<option value="am">Amazonas</option>
 	<option value="ba">Bahia</option>
-	<option value="ce">Cear·</option>
+	<option value="ce">Cear√°</option>
 	<option value="df">Distrito Federal</option>
 	<option value="es">Espirito Santo</option>
-	<option value="go">Goi·s</option>
-	<option value="ma">Maranh„o</option>
+	<option value="go">Goi√°s</option>
+	<option value="ma">Maranh√£o</option>
 	<option value="ms">Mato Grosso do Sul</option>
 	<option value="mt">Mato Grosso</option>
 	<option value="mg">Minas Gerais</option>
-	<option value="pa">Par·</option>
-	<option value="pb">ParaÌba</option>
-	<option value="pr">Paran·</option>
+	<option value="pa">Par√°</option>
+	<option value="pb">Para√≠ba</option>
+	<option value="pr">Paran√°</option>
 	<option value="pe">Pernambuco</option>
-	<option value="pi">PiauÌ</option>
+	<option value="pi">Piau√≠</option>
 	<option value="rj">Rio de Janeiro</option>
 	<option value="rn">Rio Grande do Norte</option>
 	<option value="rs">Rio Grande do Sul</option>
-	<option value="ro">RondÙnia</option>
+	<option value="ro">Rond√¥nia</option>
 	<option value="rr">Roraima</option>
 	<option value="sc">Santa Catarina</option>
-	<option value="sp">S„o Paulo</option>
+	<option value="sp">S√£o Paulo</option>
 	<option value="se">Sergipe</option>
 	<option value="to">Tocantins</option>
 	</select>

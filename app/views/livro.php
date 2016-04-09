@@ -4,14 +4,14 @@
 		</div>
 
 		<div class="col-md-7">
-		  <h2>As Leis Invisíveis do Dinheiro</h2>
+		  <h2>As Leis InvisÃ­veis do Dinheiro</h2>
 			<h3>Melo, Ricardo</h3>			
 			<h4>Gente</h4>			     
-			<p>Todos têm o desejo de enriquecer para de alguma forma 
+			<p>Todos tÃªm o desejo de enriquecer para de alguma forma 
 			melhorar suas vidas, mas o fazem desconectados de suas 
-			emoções e necessidades, pois muitas pessoas não enxergam a 
-			relação entre o desenvolvimento financeiro e o espiritual. 
-			Isso é o que tem tornado o mundo mais materialista a cada dia...</p>
+			emoÃ§Ãµes e necessidades, pois muitas pessoas nÃ£o enxergam a 
+			relaÃ§Ã£o entre o desenvolvimento financeiro e o espiritual. 
+			Isso Ã© o que tem tornado o mundo mais materialista a cada dia...</p>
 		</div>
 	</div>
 	<div class="row">

@@ -55,7 +55,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7">
-		  <h2 class="featurette-heading">Õçcaro <span class="text-muted">frase inpiradora</span></h2>
+		  <h2 class="featurette-heading">√çcaro <span class="text-muted">frase inpiradora</span></h2>
 		  <p class="lead"></p>
 		</div>
 		<div class="col-md-5">
@@ -67,7 +67,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7 col-md-push-5">
-		  <h2 class="featurette-heading">L·rio <span class="text-muted">frase inpiradora</span></h2>
+		  <h2 class="featurette-heading">L√°rio <span class="text-muted">frase inpiradora</span></h2>
 		  <p class="lead"></p>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
@@ -139,7 +139,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7 col-md-push-5">
-		  <h2 class="featurette-heading">RÛmulo <span class="text-muted">frase inpiradora</span></h2>
+		  <h2 class="featurette-heading">R√≥mulo <span class="text-muted">frase inpiradora</span></h2>
 		  <p class="lead"></p>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
@@ -151,7 +151,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7">
-		  <h2 class="featurette-heading">VÌtor <span class="text-muted">frase inpiradora</span></h2>
+		  <h2 class="featurette-heading">V√≠tor <span class="text-muted">frase inpiradora</span></h2>
 		  <p class="lead"></p>
 		</div>
 		<div class="col-md-5 ">
