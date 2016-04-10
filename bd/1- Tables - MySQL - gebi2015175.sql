@@ -1,5 +1,4 @@
-/*DROP DATABASE gebi2015175;
-*/
+DROP DATABASE gebi2015175;
 
 CREATE DATABASE gebi2015175;
 
@@ -11,7 +10,8 @@ CREATE TABLE usuario
 	idUsuario INT PRIMARY KEY, 
 	senha VARCHAR(20) NOT NULL, 
 	nome VARCHAR(50) NOT NULL,
-	email VARCHAR(50) NOT NULL
+	email VARCHAR(50) NOT NULL,
+	img VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE telefone
@@ -33,8 +33,8 @@ CREATE TABLE endereco
 
 CREATE TABLE sexo
 (
-		idSexo INT PRIMARY KEY AUTO_INCREMENT,
-		genero VARCHAR(20) NOT NULL
+	idSexo INT PRIMARY KEY AUTO_INCREMENT,
+	genero VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE editora
@@ -51,6 +51,7 @@ CREATE TABLE autor
 (
 	idAutor INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(50) NOT NULL,
+	descricao VARCHAR(100) NOT NULL,
 	idSexo INT NOT NULL,
 	FOREIGN KEY (idSexo) REFERENCES sexo (idSexo)
 );
@@ -60,12 +61,14 @@ CREATE TABLE livro
 	idLivro INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(50) NOT NULL,
 	genero VARCHAR(50) NOT NULL,
+	img VARCHAR(100) NOT NULL,
 	idAutor INT NOT NULL,
 	FOREIGN KEY (idAutor) REFERENCES autor (idAutor)
 );
 
 CREATE TABLE exemplar
 (
+	img VARCHAR(100) NOT NULL,
 	idExemplar INT PRIMARY KEY AUTO_INCREMENT,
 	idLivro INT NOT NULL,
 	FOREIGN KEY (idLivro) REFERENCES livro (idLivro)
@@ -144,7 +147,9 @@ CREATE TABLE bibliotecarioTrabalha
 	idBibliotecario INT NOT NULL,
 	idBiblioteca INT NOT NULL,
 	dataEntrada DATE NOT NULL,
-	FOREIGN KEY (idBibliotecario) REFERENCES bibliotecario (idBibliotecario),
+	FOREIGN KEY (idBibliotecario) REFERENCES bibliotecario 
+
+(idBibliotecario),
 	FOREIGN KEY (idBiblioteca) REFERENCES biblioteca (idBiblioteca)
 );
 
