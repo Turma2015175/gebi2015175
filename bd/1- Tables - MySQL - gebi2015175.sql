@@ -7,8 +7,8 @@ USE scrinia;
 /*SIMPLES*/
 CREATE TABLE usuario
 (
-	idUsuario INT PRIMARY KEY, 
-	senha VARCHAR(20) NOT NULL, 
+	idUsuario INT PRIMARY KEY AUTO_INCREMENT, 
+	senha VARCHAR(45) NOT NULL, 
 	nome VARCHAR(50) NOT NULL,
 	email VARCHAR(50) NOT NULL,
 	img VARCHAR(100) NOT NULL
@@ -154,4 +154,3 @@ CREATE TABLE bibliotecarioTrabalha
 /*FIM_ACOES_FOREIGN_KEY */
 
 insert into usuario (idUsuario, email, nome, senha, img) VALUES (1, 'admin@admin.com', 'admin',sha1('gebi2015175'), "avatar.jpg");
-ALTER TABLE `usuario` CHANGE `senha` `senha` VARCHAR(45) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
