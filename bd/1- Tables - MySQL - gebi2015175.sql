@@ -1,8 +1,8 @@
-DROP DATABASE gebi2015175;
+DROP DATABASE scrinia;
 
-CREATE DATABASE gebi2015175;
+CREATE DATABASE scrinia;
 
-USE gebi2015175;
+USE scrinia;
 
 /*SIMPLES*/
 CREATE TABLE usuario
@@ -33,8 +33,8 @@ CREATE TABLE endereco
 
 CREATE TABLE sexo
 (
-	idSexo INT PRIMARY KEY AUTO_INCREMENT,
-	genero VARCHAR(20) NOT NULL
+		idSexo INT PRIMARY KEY AUTO_INCREMENT,
+		genero VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE editora
@@ -147,10 +147,11 @@ CREATE TABLE bibliotecarioTrabalha
 	idBibliotecario INT NOT NULL,
 	idBiblioteca INT NOT NULL,
 	dataEntrada DATE NOT NULL,
-	FOREIGN KEY (idBibliotecario) REFERENCES bibliotecario 
-
-(idBibliotecario),
+	FOREIGN KEY (idBibliotecario) REFERENCES bibliotecario (idBibliotecario),
 	FOREIGN KEY (idBiblioteca) REFERENCES biblioteca (idBiblioteca)
 );
 
 /*FIM_ACOES_FOREIGN_KEY */
+
+insert into usuario (idUsuario, email, nome, senha, img) VALUES (1, 'admin@admin.com', 'admin',sha1('gebi2015175'), "avatar.jpg");
+ALTER TABLE `usuario` CHANGE `senha` `senha` VARCHAR(45) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
