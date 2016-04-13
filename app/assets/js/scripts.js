@@ -132,19 +132,19 @@ $("#formCadastroUsuario").validate({
 			cep : {
 				required : true,
 				maxlength : 9
-			}
+			},
 			endereco : {
 				required : true,
 				maxlength : 50
-			}
+			},
 			numero : {
 				required: true,
 				maxlength: 5
-			}
+			},
 			bairro : {
 				required: true,
 				maxlength : 50
-			},
+			}
 		},
 		messages : {
 			nome : {
