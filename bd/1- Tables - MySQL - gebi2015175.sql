@@ -24,8 +24,8 @@ CREATE TABLE telefone
 
 CREATE TABLE sexo
 (
-		idSexo INT PRIMARY KEY AUTO_INCREMENT,
-		sexo VARCHAR(25) NOT NULL
+	idSexo INT PRIMARY KEY AUTO_INCREMENT,
+	sexo VARCHAR(25) NOT NULL
 );
 
 CREATE TABLE endereco
@@ -47,8 +47,8 @@ CREATE TABLE editora
 
 CREATE TABLE genero
 (
-		idGenero INT PRIMARY KEY AUTO_INCREMENT,
-		genero VARCHAR(25) NOT NULL
+	idGenero INT PRIMARY KEY AUTO_INCREMENT,
+	genero VARCHAR(25) NOT NULL
 );
 
 
@@ -100,10 +100,12 @@ CREATE TABLE leitor
 	idSexo INT NOT NULL,
 	idEndereco INT NOT NULL,
     idGenero INT NOT NULL,
+    idUsuario INT NOT NULL,
     FOREIGN KEY (telefone) REFERENCES telefone (telefone),
 	FOREIGN KEY (idSexo) REFERENCES sexo (idSexo),
 	FOREIGN KEY (idEndereco) REFERENCES endereco (idEndereco),
-    FOREIGN KEY (idGenero) REFERENCES genero (idGenero)
+    FOREIGN KEY (idGenero) REFERENCES genero (idGenero),
+    FOREIGN KEY (idUsuario) REFERENCES usuario ( idUsuario)
     
 );
 
@@ -119,6 +121,7 @@ CREATE TABLE biblioteca
 CREATE TABLE bibliotecario 
 (
 	idBibliotecario INT PRIMARY KEY,
+    cpf VARCHAR(14) NOT NULL,
 	idUsuario INT NOT NULL,
 	FOREIGN KEY (idUsuario) REFERENCES usuario (idUsuario)
 );
