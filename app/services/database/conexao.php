@@ -12,12 +12,20 @@
 	//$pass	= "gebi2015175";
 
 	$con = new PDO($dsn, $user, $pass);
-	// Está armazenando a conexão dsn,user,pass 
 	
+	/*
+	TESTE DE CONEXAO CASO ALGUEM PRECISE!!
 	
-	
-	
-
+	if(!$con)
+	{
+		echo "Erro! <br/>";
+	}
+	else
+	{
+		// Se conectou posso fazer uma busca por dados.
+		echo "Conectou!!! <br/>";	
+	}
+	*/
 ?>
 
 
