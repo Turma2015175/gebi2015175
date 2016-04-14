@@ -11,6 +11,7 @@
 	//$user 	= "u890064372_admin";
 	//$pass	= "gebi2015175";
 
+	// Está armazenando a conexão dsn,user,pass 
 	$con = new PDO($dsn, $user, $pass);
 	
 	/*
