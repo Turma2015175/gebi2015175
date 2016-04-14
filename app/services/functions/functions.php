@@ -17,7 +17,7 @@
 		$email = trim(strip_tags(addslashes(filter_input(INPUT_POST,"email"))));
 		$senha = trim(strip_tags(addslashes(filter_input(INPUT_POST,"senha"))));
 		
-		$sql = "SELECT * FROM usuarios WHERE email = ? AND senha = ?";
+		$sql = "SELECT * FROM usuario WHERE email = ? AND senha = ?";
 		
 		$stmt = $con->prepare($sql);
 		$stmt->bindValue(1, $email); 
@@ -33,7 +33,7 @@
 			$_SESSION['token'] = md5($dados['email']);
 			$_SESSION['id'] = $dados['idUsuario'];
 			
-			$info = array('erro' => false);
+			$info = array("erro" => false);
 			
 		} else {
 			$info = array ("erro"=>true, 

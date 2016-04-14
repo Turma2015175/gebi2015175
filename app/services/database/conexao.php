@@ -15,7 +15,7 @@
 	$con = new PDO($dsn, $user, $pass);
 	
 	/*
-	TESTE DE CONEXAO CASO ALGUEM PRECISE!!
+	//TESTE DE CONEXAO CASO ALGUEM PRECISE!!
 	
 	if(!$con)
 	{
@@ -27,6 +27,7 @@
 		echo "Conectou!!! <br/>";	
 	}
 	*/
+	
 ?>
 
 
