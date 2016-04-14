@@ -8,33 +8,35 @@ USE scrinia;
 CREATE TABLE usuario
 (
 	idUsuario INT PRIMARY KEY AUTO_INCREMENT, 
-	senha VARCHAR(45) NOT NULL, 
+	senha VARCHAR(50) NOT NULL, 
 	nome VARCHAR(50) NOT NULL,
-	email VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
 	img VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE telefone
 (
-	ddi INT NOT NULL,
-	ddd INT NOT NULL,
+	ddi INT,
+	ddd INT,
 	telefone VARCHAR(15) PRIMARY KEY,
-	tipo VARCHAR (20) NOT NULL
-);
-
-CREATE TABLE endereco
-(
-	idEndereco INT PRIMARY KEY AUTO_INCREMENT,
-	tipo VARCHAR (20) NOT NULL,
-	cep VARCHAR(9) NOT NULL,
-	logradouro VARCHAR(50) NOT NULL,
-	complemento VARCHAR(50) NOT NULL	
+    celular VARCHAR(16)
 );
 
 CREATE TABLE sexo
 (
 		idSexo INT PRIMARY KEY AUTO_INCREMENT,
-		genero VARCHAR(20) NOT NULL
+		sexo VARCHAR(25) NOT NULL
+);
+
+CREATE TABLE endereco
+(
+	idEndereco INT PRIMARY KEY AUTO_INCREMENT,
+	pais VARCHAR (20) NOT NULL,
+	cep VARCHAR(9) NOT NULL,
+	logradouro VARCHAR(50) NOT NULL,
+    numero VARCHAR(50) NOT NULL,
+    bairro VARCHAR(50) NOT NULL,
+    estado VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE editora
@@ -42,6 +44,14 @@ CREATE TABLE editora
 	idEditora INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(50) NOT NULL
 );
+
+CREATE TABLE genero
+(
+		idGenero INT PRIMARY KEY AUTO_INCREMENT,
+		genero VARCHAR(25) NOT NULL
+);
+
+
 /*FIM_SIMPLES*/
 
 /**/
@@ -60,18 +70,24 @@ CREATE TABLE livro
 (
 	idLivro INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(50) NOT NULL,
-	genero VARCHAR(50) NOT NULL,
 	img VARCHAR(100) NOT NULL,
 	idAutor INT NOT NULL,
-	FOREIGN KEY (idAutor) REFERENCES autor (idAutor)
+    idGenero INT NOT NULL,
+    FOREIGN KEY (idAutor) REFERENCES autor (idAutor),
+    FOREIGN KEY (idGenero) REFERENCES genero (idGenero)
+
 );
 
 CREATE TABLE exemplar
 (
-	img VARCHAR(100) NOT NULL,
 	idExemplar INT PRIMARY KEY AUTO_INCREMENT,
+	img VARCHAR(100) NOT NULL,
+    numeroEdicao INT NOT NULL,
+	dataPublicacao DATE NOT NULL,
 	idLivro INT NOT NULL,
-	FOREIGN KEY (idLivro) REFERENCES livro (idLivro)
+    idEditora INT NOT NULL,
+	FOREIGN KEY (idLivro) REFERENCES livro (idLivro),
+    FOREIGN KEY (idEditora) REFERENCES editora (idEditora)
 );
 
 CREATE TABLE leitor 
@@ -83,9 +99,12 @@ CREATE TABLE leitor
 	telefone VARCHAR(15) NOT NULL,
 	idSexo INT NOT NULL,
 	idEndereco INT NOT NULL,
-	FOREIGN KEY (telefone) REFERENCES telefone (telefone),
+    idGenero INT NOT NULL,
+    FOREIGN KEY (telefone) REFERENCES telefone (telefone),
 	FOREIGN KEY (idSexo) REFERENCES sexo (idSexo),
-	FOREIGN KEY (idEndereco) REFERENCES endereco (idEndereco)
+	FOREIGN KEY (idEndereco) REFERENCES endereco (idEndereco),
+    FOREIGN KEY (idGenero) REFERENCES genero (idGenero)
+    
 );
 
 CREATE TABLE biblioteca 
@@ -108,16 +127,6 @@ CREATE TABLE bibliotecario
 /**/
 
 /*ACOES_FOREIGN_KEY */
-CREATE TABLE publicacao
-(
-	idPublica INT PRIMARY KEY AUTO_INCREMENT,
-	numeroEdicao INT NOT NULL,
-	dataPublicacao DATE NOT NULL,
-	idExemplar INT NOT NULL,
-	idEditora INT NOT NULL,
-	FOREIGN KEY (idExemplar) REFERENCES exemplar (idExemplar),
-	FOREIGN KEY (idEditora) REFERENCES editora (idEditora)
-);
 
 CREATE TABLE emprestimo
 (
@@ -126,6 +135,7 @@ CREATE TABLE emprestimo
 	idExemplar INT NOT NULL,
 	dataEmprestimo DATE NOT NULL,
 	dataDevolucao DATE NOT NULL,
+    comentario VARCHAR (250),
 	FOREIGN KEY (idLeitor) REFERENCES leitor (idLeitor),
 	FOREIGN KEY (idExemplar) REFERENCES exemplar (idExemplar)
 );
@@ -152,5 +162,7 @@ CREATE TABLE bibliotecarioTrabalha
 );
 
 /*FIM_ACOES_FOREIGN_KEY */
+
+/*Inserts*/
 
 insert into usuario (idUsuario, email, nome, senha, img) VALUES (1, 'admin@admin.com', 'admin',sha1('gebi2015175'), "avatar.jpg");
