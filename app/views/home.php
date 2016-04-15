@@ -78,7 +78,7 @@ Nos dias de hoje, com o advento da internet, o acesso a informação ficou muito
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-6">
           <!--<img class="img-circle" src="logoM.png" alt="Generic placeholder image" width="140" height="140"> -->
-          <h2>JScrinia</h2>
+          <h2>Scrinia</h2>
           <p>A GEBI2015175 é uma aplicação web de gestão de bibliotecas e livros, a qual tem a finalidade de unir o melhor dos dois mundos: a facilidade e a agilidade da internet com a satisfação e praticidade de ter um livro físico em mãos.
 
 Você precisa de um livro para suas pesquisas ou estudos? Simples.
