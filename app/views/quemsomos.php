@@ -151,7 +151,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7">
-		  <h2 class="featurette-heading">Vítor <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span></h2>
+		  <h2 class="featurette-heading">Victor <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span></h2>
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5 ">
