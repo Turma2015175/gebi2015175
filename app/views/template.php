@@ -13,7 +13,7 @@
 	<link rel="shortcut icon" href="app/assets/img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="app/assets/img/favicon.ico" type="image/x-icon">
    
-    <title>GEBI 2015175 | <?php echo $title; ?></title>
+    <title> Scrinia <?php echo $title = "" ?></title>
 
     <link href='https://fonts.googleapis.com/css?family=Arvo:400,700italic' rel='stylesheet' type='text/css'>
     <link href="app/assets/css/jquery.bxslider.css" rel="stylesheet" />
@@ -36,8 +36,9 @@
 	
 	<div id="site">
 	<div class="col-xs-10 col-xs-offset-1">
-		<header>			
-			<h1 title="Scrinia"><span id="logo-img"></span> </h1>
+		<header>
+			
+			<h1 title="Scrinia"><span class="img-responsive" alt="Logo_Responsivo" id="logo-img" ></span> </h1>
 		</header>
 		<nav class="navbar navbar-default">
 			<div class="container">
