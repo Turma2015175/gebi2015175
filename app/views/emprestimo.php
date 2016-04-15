@@ -23,18 +23,14 @@
 				<div class="col-xs-12 col-sm-8">
 					<div class="form-group">
 						<label for="datasaida">Data de emprestimo: </label>
-							<div class=datepicker>
-								<input class="form-control" type="date" id="datasaida" name="datasaida">
-							</div>
+								<input class="form-control" id="datepicker1" type="date" id="datasaida" name="datasaida"  placeholder="__/__/____">
 						</div>
 					</div>
 				
 				<div class="col-xs-12 col-sm-8">
 					<div class="form-group">
 						<label for="datadevolucao">Data de devolução: </label>
-							<div class=datepicker>
-								<input class="form-control" type="date" id="datadevolucao" name="datadevolucao">
-							</div>
+						<input class="form-control" id="datepicker2" type="date" id="datadevolucao" name="datadevolucao"  placeholder="__/__/____">
 					</div>
 				</div>
 						

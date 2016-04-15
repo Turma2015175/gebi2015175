@@ -24,9 +24,18 @@
 			
 			$(function(){
 			
-				$('.datepicker').datepicker({
+				$('#datepicker1').datepicker({
 					format: 'dd/mm/yyyy'
 				});
+				
+				$('#datepicker2').datepicker({
+					format: 'dd/mm/yyyy'
+				});
+				
+				$('#datepicker3').datepicker({
+					format: 'dd/mm/yyyy'
+				});
+				
 			
 			});
 			
