@@ -37,7 +37,7 @@
 	<div id="site">
 	<div class="col-xs-10 col-xs-offset-1">
 		<header>			
-			<h1><span id="logo-img"></span> Scrinia</h1>
+			<h1 title="Scrinia"><span id="logo-img"></span> </h1>
 		</header>
 		<nav class="navbar navbar-default">
 			<div class="container">
