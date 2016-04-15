@@ -7,13 +7,6 @@
 						<label for="nome">Nome:</label>
 						<input class="form-control" type="text" id="nome" name="nome" placeholder="Digite seu Nome."/>
 					</div>
-				</div>
-				
-				<div class="col-xs-12 col-sm-6">
-					<div class="form-group">
-						<label for="sobrenome">Sobrenome:</label>
-						<input class="form-control" type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu Sobrenome."/>
-					</div>
 				</div>	
 				
 				<div class="col-xs-12 col-sm-6">
@@ -55,13 +48,6 @@
 				<div class="form-group">
 					<label for="idade">Data de Nascimento:</label>
 					<input class="form-control" type="date" id="idade" name="idade">
-				</div>
-			</div>
-			
-			<div class="col-xs-12 col-sm-6">
-				<div class="form-group">
-					<label for="login">Login:</label>
-					<input class="form-control" type="text" id="login" name="login" placeholder="Informe um Login."/>
 				</div>
 			</div>
 
