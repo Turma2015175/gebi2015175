@@ -1,24 +1,60 @@
-<fieldset>
-		<legend>Empréstimo</legend>
-		
-		
-			<label class="emprestino" for="livro">Nome do livro:</label>
-				<input type="text" id="livro" name="livro" placeholder="Digite o nome"/><br /><br />
-		
+<div class="col-xs-10 col-sm-10">
+
+<h1>Emprestimo</h1>
+
 			
-			<label class="emprestino" for="datasaida">Data de saída:</label>
-				<input type="text" name="dia" size="2" maxlength="2" placeholder="dd"> 
-				<input type="text" name="mes" size="2" maxlength="2" placeholder="mm"> 
-				<input type="text" name="ano" size="4" maxlength="4" placeholder="aaaa"><br /><br />
-		
-			
-			<label class="emprestino" for="datadevolucao">Data de devolução:</label>
-				<input type="text" name="dia" size="2" maxlength="2" placeholder="dd"> 
-				<input type="text" name="mes" size="2" maxlength="2" placeholder="mm"> 
-				<input type="text" name="ano" size="4" maxlength="4" placeholder="aaaa"><br /><br />
+				<form id="formemprestimo">			
 				
-		<!--Verificar a necessidade deste campo-->
-		<label class="emprestino" for="comentarios">Comentários</label><br />
-		<textarea rows="5" cols="35" maxlength="200" name="comentarios" id="comentarios"></textarea>  
+					<div class="col-xs-12 col-sm-8">
+					<div class="form-group">
+						<label class="emprestimo" for="livro">Nome do livro:</label>
+						<input class="form-control" type="text" id="livro" name="livro" placeholder="Digite o nome"/>
+					</div>
+				</div>
+				
+				<!--<div class="col-xs-12 col-sm-8">
+					<div class="form-group">
+						<label class="emprestimo" form="datasaida">Data de emprestimo:</label> 
+						<input id="datasaida"   class="datepicker" type="text" name="datasaida">
+						
+					</div>
+				</div>-->
+				
+				<div class="col-xs-12 col-sm-8">
+					<div class="form-group">
+						<label for="datasaida">Data de emprestimo: </label>
+							<div class=datepicker>
+								<input class="form-control" type="date" id="datasaida" name="datasaida">
+							</div>
+						</div>
+					</div>
+				
+				<div class="col-xs-12 col-sm-8">
+					<div class="form-group">
+						<label for="datadevolucao">Data de devolução: </label>
+							<div class=datepicker>
+								<input class="form-control" type="date" id="datadevolucao" name="datadevolucao">
+							</div>
+					</div>
+				</div>
+						
+				<!--<div class="col-xs-12 col-sm-8">
+					<div class="form-group">
+						<label class="emprestimo">Data de devolução:</label>
+						<input class="datepicker" type="text" name="date2">
+						
+					</div>
+				</div>-->
+				
+				<div class="col-xs-12 col-sm-8">
+					<div class="form-group">
+						<label class="emprestimo" for="enderecobiblioteca">Endereço da biblioteca</label>
+						<input class="form-control" type="text" id="enderecobiblioteca" name="enderecobiblioteca"/>
+					</div>
+				</div>
+				
+				<div class="col-xs-12 col-sm-8">
+				<input class="btn btn-default" type="submit" value="confirmar emprestimo" id="enviar"/>
 			
-			
+		</form>
+</div>
