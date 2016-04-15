@@ -7,6 +7,7 @@
 	
 	if(empty($get)){
 		$url = BASE_PATH . DS . "app" . DS . "views" . DS . "home" . ".php";
+		$title = ucfirst("home");
 	}
 	elseif(in_array($get, $allow))
 	    {
