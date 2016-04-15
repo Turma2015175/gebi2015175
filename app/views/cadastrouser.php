@@ -47,7 +47,7 @@
 			<div class="col-xs-12 col-sm-6">
 				<div class="form-group">
 					<label for="idade">Data de Nascimento:</label>
-					<input class="form-control" type="date" id="idade" name="idade">
+					<input class="form-control" id="datepicker1" type="date" id="idade" name="idade" placeholder="__/__/____"/>
 				</div>
 			</div>
 
