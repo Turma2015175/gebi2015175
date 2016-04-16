@@ -1,0 +1,145 @@
+*{
+font-family:'Arvo', serif;
+padding:0;
+margin:0;
+text-decoration:none;
+list-style-type:none;
+}
+
+#site{
+	display:none;
+	min-height: 100%;
+	position: relative;
+	overflow:auto;
+	//border:1px solid blue;
+}
+#preloader{
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	
+	top: 50%;
+	left:50%;
+	margin: -32px 0 0 -32px;
+	
+}
+
+html, body {
+	height: 100%;
+}
+
+img {
+	max-width:100%;
+	max-height:100%;
+	
+}
+* html #site {
+	height: 100%; /* hack para IE6 que trata height como min-height */
+	}
+
+header{
+	//height:180px;
+	overflow:auto;
+	//border:1px solid blue;
+}	
+	#logo-img {
+		display:block;
+		background-image: url(../img/logoM.png) ;
+		background-repeat:no-repeat;
+		width:585px;
+		height:152px;
+		float:left;
+		//border:1px solid red;
+	}
+	header h1{
+		font-size:120px;
+		//float:left;
+		//border:1px solid green;
+	}
+
+#conteudo {
+	padding-bottom: 120px;
+	overflow:auto;
+	//border: 1px solid red; 
+	}
+.navbar, footer{
+	background: #c9bd96;
+}	
+
+.navbar {
+	font-size:1.5em;
+	
+}
+.navbar-default .navbar-nav>li>a{
+	color:#fff;
+}
+.navbar-right{
+	margin-right:15%;
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	padding:2px 2.5%;
+	
+	
+}
+
+footer ul{
+	border-bottom: 1px solid;
+	width:100%;
+	overflow:auto;
+	padding:10px;
+	text-align:center;
+}
+footer li{
+	display:inline; 
+}
+
+footer a {
+	color: #000;
+}
+
+/*view livros*/
+
+.livros-secao{
+	margin-bottom:30px;
+	overflow:auto;	
+}
+
+.livros-secao h2 {
+    margin: 30px 0;
+    text-align: center;
+    color: brown;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 910px){
+	header h1{
+		text-align:center;
+	}
+	#logo-img{
+		float:none;
+		margin:0 auto;
+	}	
+	#conteudo {
+	padding-bottom: 180px;
+}
+
+@media only screen and (max-width: 630px){
+
+	header h1 {
+		font-size:60px;
+	}
+	#logo-img {
+	//	background-image: url(../img/logoP.png) ;
+	}
+}
+@media only screen and (max-width: 510px){
+
+	
+}
+
