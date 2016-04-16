@@ -5,12 +5,17 @@
 					tudo é só uma ideia do que pode ser feito-->
 
 		<section>
-		<h1 class="label label-warning">Lista de livros</h1>
-		<img src="app/assets/img/imagemprincipal.jpg" alt="" title="" />			<!-- link para apresentar imagens -->
+		<!--<h1 class="label label-warning">Lista de livros</h1> -->
+		<img src="app/assets/img/livro-interno.jpg" alt="" title="" />			<!-- link para apresentar imagens -->
 		</section>
-
-		<section class="livros-secao">
-			<h2>Livros em destaque (pode ser conforme perfil do usuario)</h2>
+		
+		<section class="livros-secao">	
+			
+			
+			<h2>Livros em Destaque </h2>
+				
+			
+			
 			<div class="col-md-4">
 				<h3>As Leis Invisíveis do Dinheiro </h3>			<!-- titulo do livro -->
 				<h4>Melo, Ricardo</h4>			<!-- autor do livro -->		
@@ -38,8 +43,8 @@
 		
 		<br/>
 		
-		<section>
-			<h2>Livros mais lidos (pode ser quem leu aquele tambem leu esse, etc)</h2>
+		<section class="livros-secao">	
+			<h2>Livros Mais Lidos </h2>
 			<div class="col-md-4">
 				<h3>Geração de Valor é Compartilhando Inspiração</h3>			<!-- titulo do livro -->
 				<h4>Silva, Flávio Augusto Da</h4>			<!-- autor do livro -->			

@@ -1,154 +1,32 @@
+<!-- Na tela de cadastro, o funcionário terá a possibilidade de inserir os dados de um novo livro e/ou exemplar da biblioteca. 
+Para cadastrar um novo livro basta inserir dados como dados como: título do livro, autor do livro, a editora, a edição o ano, 
+o tipo de publicação (por exemplo, livro, apostila, mídia, artigo, entre outros) e cadastrar palavras chave para facilitar um futura pesquisa pelo livro.
+ O campo data de Aquisição será preenchido automaticamente conforme a data atual em que o livro está sendo cadastrado.
+ Para cadastrar um exemplar de algum livro já cadastrado, basta escolher o tipo de publicação como sendo Exemplar e inserir o código do livro,
+ então na tela será exibido o título, autor e editora do livro, sendo possível editar a edição do exemplar, 
+ o ano. O código do exemplar será gerado automaticamente, bem como, a data de aquisição conforme a data atual de cadastramento do exemplar. -->
 
 <div class="col-xs-10 col-sm-8">
-	<form action="" method="" id="formCadastroUsuario">
+
+<form action="" method="" id="cadastrolivro">
+
+	<fieldset>
+							
+		<legend>Cadastro de biblioteca</legend>
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<div class="form-group cadastrolivro">
+					<label for="titulolivro">Nome</label>
+					<input class="form-control" id="titulolivro" placeholder="Digite o nome da biblioteca">
+				</div> 
+			</div> 
+		</div> 
 	
-				<div class="col-xs-12 col-sm-6">
-					<div class="form-group">
-						<label for="nome">Nome:</label>
-						<input class="form-control" type="text" id="nome" name="nome" placeholder="Digite seu Nome."/>
-					</div>
-				</div>	
-				
-				<div class="col-xs-12 col-sm-6">
-					<div class="form-group">
-						<label for="email_pessoal">Email:</label>
-						<input class="form-control" type="email" id="email_pessoal" name="email_pessoal" placeholder="Digite seu Email."/>
-					</div>
-				</div>	
-				
-				<div class="col-xs-12 col-sm-6">
-					<div class="form-group">
-						<label for="repita_email_pessoal">Confirmação de Email:</label>
-						<input class="form-control" type="email" id="repita_email_pessoal" name="repita_email_pessoal" placeholder="Repita seu Email." />
-					</div>
-				</div>	
-				
-				<div class="col-xs-12 col-sm-6">
-					<div class="form-group">
-						<label for="telefone">Telefone:</label>
-						<input class="form-control" type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone."/>
-					</div>
-				</div>	
-				
-				<div class="col-xs-12 col-sm-6">
-					<div class="form-group">
-						<label for="cpf">CPF:</label>
-						<input class="form-control" type="text" id="cpf" name="cpf" placeholder="Digite seu CPF."/>
-					</div>
-				</div>
-				
-				<div class="col-xs-12 col-sm-6">
-					<div class="form-group">
-						<label for="celular">Celular:</label>
-						<input class="form-control" type="text" id="celular" name="celular" placeholder="Digite seu Celular."/>
-					</div>
-				</div>	
-			
-			<div class="col-xs-12 col-sm-6">
-				<div class="form-group">
-					<label for="idade">Data de Nascimento:</label>
-					<input class="form-control" id="datepicker1" type="text" id="idade" name="idade" placeholder="__/__/____"/>
-				</div>
-			</div>
-
-			
-			<div class="col-xs-12 col-sm-6">
-				<div class="form-group">
-					<label for="senha">Senha:</label>
-					<input class="form-control" type="password" id="senha" name="senha" placeholder="Informe uma Senha."/> 
-				</div>
-			</div>
-			
-			<div class="col-xs-12 col-sm-6">
-				<div class="form-group">
-					<label for="rsenha">Confirmação de Senha:</label>
-					<input class="form-control" type="password" id="rsenha" name="rsenha" placeholder="Repita sua Senha."/>
-				</div>
-			</div>
-			
-			<div class="form-inline" class="col-xs-12 col-sm-6">
-			
-				<div class="radio">
-				  <label for="masculino">
-					<input type="radio" name="sexo" id="masculino" value="masculino">Masculino
-				  </label>
-				</div>
-				
-				<div class="radio">
-				  <label for="feminino">
-					<input type="radio" name="sexo" id="feminino" value="feminino">Feminino
-				  </label>
-				</div>
-				
-			</div>
+		<div class="row">
 		
-		
-		<label>Informe seu género favorito:	
-			<div class="form-inline">
-				<div class="checkbox">
-					<label for="biografia">
-						<input type="checkbox" id="biografia" name="biografia"/>Biografia
-					</label>
-				</div>	
-				
-				<div class="checkbox">
-					<label for="comedia">
-						<input type="checkbox" id="comedia" name="comedia"/>Comédia
-					</label>
-				</div>	
-				
-				<div class="checkbox">
-					<label for="drama">
-						<input type="checkbox" id="drama" name="drama"/>Drama
-					</label>
-				</div>
-				
-				<div class="checkbox">
-					<label for="estudos">
-						<input type="checkbox" id="estudos" name="estudos"/>Estudos
-					</label>
-				</div>
-
-				<div class="checkbox">
-					<label for="ficcao">
-						<input type="checkbox" id="ficcao" name="ficcao"/>Ficção
-					</label>
-				</div>
-			</div>
-			<div class="form-inline">
-				<div class="checkbox">
-					<label for="poesia">
-						<input type="checkbox" id="poesia" name="poesia"/>Poesia
-					</label>
-				</div>
-				
-				<div class="checkbox">
-					<label for="romantico">
-						<input type="checkbox" id="romantico" name="romantico"/>Romance
-					</label>
-				</div>
-				
-				<div class="checkbox">
-					<label for="policial">
-						<input type="checkbox" id="policial" name="policial"/>Romance Policial
-					</label>
-				</div>
-				
-				<div class="checkbox">
-					<label for="terror">
-						<input type="checkbox" id="terror" name="terror"/>Terror
-					</label>
-				</div>
-				
-				<div class="checkbox">
-					<label for="outro">
-						<input type="checkbox" id="outro" name="outro"/>Outros
-					</label>
-				</div>	
-			</div>	
-		</label>
-		
-		<div class="col-xs-12 col-sm-6">
+		<!--
+		<div class="col-xs-12 col-sm-3">
 			<div class="select" class="form-group">
 				<label id="pais" name="pais">País:</label>
 					<select class="form-control" id="pais" name="pais">
@@ -406,36 +284,9 @@
 					</select>
 					
 			</div>
-		</div>	
-		
-		<div class="col-xs-12 col-sm-6">
-			<div class="form-group">
-				<label for="cep">Cep:</label>
-				<input class="form-control" type="text" id="cep" name="cep" placeholder="Digite seu Cep"/>
-			</div>	
-		</div>
-		
-		<div class="col-xs-12 col-sm-6">
-			<div class="form-group">
-				<label for="endereco" >Endereço:</label>
-				<input class="form-control" type="text" id="end" name="endereco" placeholder="Digite seu Endereço"/>
-			</div>
-		</div>
-		
-		<div class="col-xs-12 col-sm-6">
-			<div class="form-group">
-				<label for="numero">Número:</label>
-				<input class="form-control" type="text" id="numEnd" name="numero" placeholder="nº rua"/>
-			</div>
-		</div>
-		
-		<div class="col-xs-12 col-sm-6">
-			<div class="form-group">
-				<label for="bairro">Bairro:</label>
-				<input class="form-control" type="text" id="bairro" name="bairro" placeholder="Digite seu Bairro"/>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-6">
+		</div>	-->
+
+		<div class="col-xs-12 col-sm-4">
 			<div class="select" class="form-group">
 				<label for="estados">Estado:</label>	
 				<select class="form-control" name="estados">
@@ -470,8 +321,59 @@
 				</select>
 			</div>
 		</div>
+
+			<div class="col-xs-12 col-sm-4">
+				<div class="form-group">
+					<label for="cep">Cep:</label>
+					<input class="form-control" type="text" id="cep" name="cep" placeholder="Digite seu Cep"/>
+				</div>	
+			</div>	
+			
+			<div class="col-xs-12 col-sm-4">
+				<div class="form-group">
+					<label for="bairro">Bairro:</label>
+					<input class="form-control" type="text" id="bairro" name="bairro" placeholder="Digite seu Bairro"/>
+				</div>
+			</div>
 		
+		
+		
+		</div>
+
+		<div class="row">
+
+		
+		<div class="col-xs-12 col-sm-10">
+			<div class="form-group">
+				<label for="endereco" >Endereço:</label>
+				<input class="form-control" type="text" id="end" name="endereco" placeholder="Digite seu Endereço"/>
+			</div>
+		</div>	
+	
+
+		<div class="col-xs-12 col-sm-2">
+			<div class="form-group">
+				<label for="numero">Número:</label>
+				<input class="form-control" type="text" id="numEnd" name="numero" placeholder="Número"/>
+			</div>
+		</div>	
+		</div>
+
+
+		<div class="row">
+
+		</div>
+
+		<div class="form-group">
 		<input class="btn btn-default" type="submit" value="Finalizar Cadastro" id="enviar"/>
+		</div>
 		
-	</form>
+	</fieldset>
+	
+	
+	
+</form>
 </div>
+
+
+

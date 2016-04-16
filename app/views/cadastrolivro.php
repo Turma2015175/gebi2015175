@@ -4,60 +4,126 @@ o tipo de publicação (por exemplo, livro, apostila, mídia, artigo, entre outr
  O campo data de Aquisição será preenchido automaticamente conforme a data atual em que o livro está sendo cadastrado.
  Para cadastrar um exemplar de algum livro já cadastrado, basta escolher o tipo de publicação como sendo Exemplar e inserir o código do livro,
  então na tela será exibido o título, autor e editora do livro, sendo possível editar a edição do exemplar, 
- o ano. O código do exemplar será gerado automaticamente, bem como, a data de aquisição conforme a data atual de cadastramento do exemplar.-->
+ o ano. O código do exemplar será gerado automaticamente, bem como, a data de aquisição conforme a data atual de cadastramento do exemplar. -->
 
+<div class="col-xs-10 col-sm-8">
 
 <form action="" method="" id="cadastrolivro">
 
 	<fieldset>
-		<legend>Cadastro de Livro</legend>
-			<label class="cadastrolivro" for="codigo">Código Livro:</label>
-			<input type="text" id="codlivro" name="codlivro" placeholder="CodLivro"/>
+							
+			<legend>Cadastro de Livro</legend>
 			
-			<label class="cadastrolivro" for="publica��o">Tipo de Publicação:</label>
-			<select id="tipopublic" name="tipopublic">
-			<option selected="selected">Tipo</option>
-			<option value="livro">Livro</option>
-			<option value="apostila">Apostila</option>
-			<option value="midia">Mídia</option>
-			<option value="artigo">Artigo</option>
-			<option value="Outros">Outros</option>
-			</select>
-			<br/><br/>
-			
-			<label class="cadastrolivro" for="TituloLivro">Título:</label>
-			<input type="text" id="titulolivro" name="titulolivro" placeholder="Digite o Título" size="60"/><br>
-			
-			<label class="cadastrolivro" for="autorlivro">Autor:</label>
-			<input type="text" id="autorlivro" name="autorlivro" placeholder="Digite o Autor" size="60"/><br>
-			
-			<label class="cadastrolivro" for="editoralivro">Editora:</label>
-			<input type="text" id="editoralivro" name="editoralivro" placeholder="Digite a Editora" size="60"/>
-			
-			<label class="cadastrolivro" for="edicao">Edição:</label>
-			<input type="text" id="edicao" name="edicao" placeholder="n° Edição" size="5"/><br>
-			
-			<label class="cadastrolivro" for="Anoedicao">Ano:</label>
-			<input type="text" id="Ano" name="Anoedicao" placeholder="Ano" size="5"/>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<div class="form-group cadastrolivro">
+						<label for="titulolivro">Título</label>
+						<input class="form-control" id="titulolivro" placeholder="Digite o Título">
+					</div> 
+				</div> 
+					
+				<div class="col-xs-12 col-sm-6">
+					<div class="form-group cadastrolivro">
+						<label for="autorlivro">Autor</label>
+						<input class="form-control" id="autorlivro" placeholder="Digite o Autor">
+					</div> 
+				</div> 
+			</div> 
 			
 			
-			<label class="cadastrolivro" for="codigo">Código:</label>
-			<input type="text" id="anoedicao" name="Anoedicao" placeholder="Ano" size="5"/>
+			<div class="row">
+				<div class="col-xs-12 col-sm-4">
+					<div class="form-group cadastrolivro">
+						 <label for="editoralivro">Editora</label> 
+						 <input class="form-control" id="editoralivro" placeholder="Editora" /> 
+					 </div> 
+				</div> 				
+				
+				
+				<div class="col-xs-12 col-sm-2">
+					<div class="form-group cadastrolivro">
+						 <label for="edicao">Edição</label> 
+						 <input class="form-control" id="edicao" placeholder="n° Edição" />
+					 </div> 
+				</div> 
+				
+				<div class="col-xs-12 col-sm-2">
+					<div class="form-group cadastrolivro">
+						<label for="Anoedicao">Ano:</label>
+						<input class="form-control" id="Ano" placeholder="Ano" />
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-2">
+					<div class="form-group cadastrolivro">
+						<label for="codigo">Código:</label>
+						<input class="form-control" id="anoedicao" placeholder="Código" />
+					</div>
+				</div>				
+
+				<div class="col-xs-12 col-sm-2">
+					<div class="form-group cadastrolivro">
+						<label for="dataaquisicao">Data de Aquisição:</label>
+						<input class="form-control" type="date" id="datepicker2" name="dataaquisicao" placeholder="__/__/____"/>
+					</div>
+				</div>
+			</div> 
+
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<div class="form-group cadastrolivro">
+						<label for="palavraschave">Palavras-Chave:</label>
+						<input class="form-control" id="palavraschave" name="palavraschave" size="80" />
+					</div>
+				</div>				
+				
+
+				<div class="col-xs-12 col-sm-2">
+					<div class="form-group cadastrolivro">
+						<label for="autorlivro">Autor</label>
+						<input class="form-control" id="autorlivro" placeholder="Digite o Autor" />
+					</div> 
+				</div>
+
+				 <div class="col-xs-12 col-sm-2">
+					<div class="form-group cadastrolivro">
+						<label for="codigo">Código do Livro:</label>
+						<input class="form-control" type="text" id="codlivro" name="codlivro" placeholder="Código do Livro"/>
+					 </div>
+				 </div>
 			
-			<label class="cadastrolivro" for="Anoedicao">Ano:</label>
-			<input type="text" id="Ano" name="Anoedicao" placeholder="Ano" size="5"/>
+				<div class="col-xs-12 col-sm-2">
+					<div class="form-group cadastrolivro">
+					<label class="" for="publicacao">Tipo de Publicação:</label>
+						<select class="form-control" id="tipopublic" name="tipopublic">
+						<option selected="selected">Tipo</option>
+						<option value="livro">Livro</option>
+						<option value="apostila">Apostila</option>
+						<option value="midia">Mídia</option>
+						<option value="artigo">Artigo</option>
+						<option value="Outros">Outros</option>
+						</select>
+					</div>
+				</div>				
+			</div> 
+
+		<div class="form-group cadastrolivro">
+		<input class="btn btn-default" type="submit" value="Finalizar Cadastro" id="enviar"/>
+		</div>
 			
-			<label class="cadastrolivro" for="dataaquisicao">Data de Aquisição:</label>
-			<input type="date" id="dataaquisicao" name="dataaquisicao"><br><br>
+
+
 			
-			<label class="cadastrolivro" for="palavraschave">Palavras-Chave:</label>
-			<input type="text" id="palavraschave" name="palavraschave" size="80"><br>
-			
+
+						
 			
 	</fieldset>
 	
 	
 	
 </form>
+</div>
+
 
 
