@@ -104,8 +104,17 @@ footer a {
 
 .livros-secao{
 	margin-bottom:30px;
-	overflow:auto;
-	
+	overflow:auto;	
+}
+
+.livros-secao h2 {
+    margin: 30px 0;
+    text-align: center;
+    color: brown;
+}
+
+footer p {
+    font-size: 10px;
 }
 
 @media only screen and (max-width: 910px){
