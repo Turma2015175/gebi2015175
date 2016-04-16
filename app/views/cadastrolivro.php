@@ -4,7 +4,7 @@ o tipo de publicação (por exemplo, livro, apostila, mídia, artigo, entre outr
  O campo data de Aquisição será preenchido automaticamente conforme a data atual em que o livro está sendo cadastrado.
  Para cadastrar um exemplar de algum livro já cadastrado, basta escolher o tipo de publicação como sendo Exemplar e inserir o código do livro,
  então na tela será exibido o título, autor e editora do livro, sendo possível editar a edição do exemplar, 
- o ano. O código do exemplar será gerado automaticamente, bem como, a data de aquisição conforme a data atual de cadastramento do exemplar. -->
+ o ano. O código do exemplar será gerado automaticamente, bem como, a data de aquisição conforme a data atual de cadastramento do exemplar. md lg -->
 
 <div class="col-xs-10 col-sm-8">
 
