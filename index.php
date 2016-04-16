@@ -26,14 +26,20 @@
 			
 				$('#datepicker1').datepicker({
 					format: 'dd/mm/yyyy'
+				}).on('changeDate', function(e){
+					$(this).datepicker('hide');
 				});
 				
 				$('#datepicker2').datepicker({
 					format: 'dd/mm/yyyy'
+				}).on('changeDate', function(e){
+					$(this).datepicker('hide');
 				});
 				
 				$('#datepicker3').datepicker({
 					format: 'dd/mm/yyyy'
+				}).on('changeDate', function(e){
+					$(this).datepicker('hide');
 				});
 				
 			
