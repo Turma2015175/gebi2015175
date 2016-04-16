@@ -10,17 +10,7 @@
 	
 	
 
-<!DOCTYPE html>
-
-<html>
-	<head>
-		
-		<link rel="stylesheet" href="app/assets/css/bootstrap.css">
-		<link rel="stylesheet" href="app/assets/css/datepicker.css">
-		<script src="app/assets/js/main.js"></script>
-		<script src="app/assets/js/bootstrap-datepicker-pt-BR.js"></script>
-		
-		<script>
+<script>
 			
 			$(function(){
 			
@@ -46,13 +36,5 @@
 			});
 			
 		</script>
-	</head>
 	
-	<body>
-		
-	</body>
-	
-	
-</html>
-
 
