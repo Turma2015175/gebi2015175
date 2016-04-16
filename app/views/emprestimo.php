@@ -21,7 +21,7 @@
 		<div class="col-xs-12 col-sm-2">
 			<div class="form-group">
 				<label for="datadevolucao">Data de devolução: </label>
-				<input class="form-control" type=" " id="datadevolucao" name="datadevolucao"  placeholder="__/__/____" disabled>
+				<input class="form-control" type="text" id="datadevolucao" name="datadevolucao"  placeholder="__/__/____" disabled>
 			</div>
 		</div>
 		

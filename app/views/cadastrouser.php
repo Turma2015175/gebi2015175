@@ -12,7 +12,7 @@
 
 			<div class="form-group">
 				<label for="idade">Data de Nascimento:</label>
-				<input class="form-control"  type="date" id="idade datepicker1" name="idade" placeholder=""/>
+				<input class="form-control"  type="text" id="datepicker1","idade" name="idade" placeholder="__/__/____"/>
 			</div>	
 
 			<div class="form-group">
