@@ -16,8 +16,8 @@
     <title> Scrinia <?php echo $title = "" ?></title>
 
     <link href='https://fonts.googleapis.com/css?family=Arvo:400,700italic' rel='stylesheet' type='text/css'>
-    <link href="app/assets/css/jquery.bxslider.css" rel="stylesheet" />
     <link href="app/assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="app/assets/css/datepicker.css">
 	<link href="app/assets/css/style.css" rel="stylesheet" />
 	
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' />
@@ -35,11 +35,7 @@
 	</div>
 	
 	<div id="site">
-	<div class="
-	col-xs-10 col-xs-offset-1 
-	col-sm-10 col-sm-offset-1 
-	col-md-10 col-md-offset-1"
-		col-md-10 col-md-offset-1>
+	<div class="col-xs-10 col-xs-offset-1">
 		<header>
 			
 			<h1 title="Scrinia"><span class="img-responsive" alt="Logo_Responsivo" id="logo-img" ></span> </h1>
@@ -126,8 +122,9 @@
     
     <script src="app/assets/js/jquery.min.js"></script>
 	<script src="app/assets/js/jquery.validate.min.js"></script>
-	<script src="app/assets/js/jquery.bxslider.min.js"></script>
 	<script src="app/assets/js/bootstrap.min.js"></script>
+	<script src="app/assets/js/main.js"></script>
+	<script src="app/assets/js/bootstrap-datepicker-pt-BR.js"></script>
 	<script src="app/assets/js/scripts.js"></script>
 	<script src="app/assets/js/init.js"></script>
     
