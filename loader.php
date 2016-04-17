@@ -12,14 +12,12 @@
 	elseif(in_array($get, $allow))
 	    {
 
-		$restritas = [""];
+		$restritas = ["usuarios"];
 		if(in_array($get, $restritas)){
 			include_once BASE_PATH . "/app/services/functions/seguranca.php";
 			valida();
 		}
-		if (!isset($_SESSION)) {
-			session_start();
-		}
+
 		$title = ucfirst($get);
 
 		$url = BASE_PATH . DS . "app" . DS . "views" . DS .  $get . ".php";

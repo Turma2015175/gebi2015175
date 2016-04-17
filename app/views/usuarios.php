@@ -8,6 +8,8 @@
 	<div> id </div>
 </section>
 <section>
+
+
 	<h3>Livros Sugeridos</h3>
     
 
@@ -26,7 +28,7 @@
       </ol>
       <div role="listbox" class="carousel-inner">
         <div class="item">
-          <img alt="First slide" src="app/assets/img/livro1destaque.jpg" class="first-slide">
+          <img alt="First slide" src="app/assets/img/livro/livro1destaque.jpg" class="first-slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Titulo 1</h1>
@@ -36,7 +38,7 @@
           </div>
         </div>
         <div class="item">
-          <img alt="Second slide" src="app/assets/img/livro1maislidos.jpg" class="second-slide">
+          <img alt="Second slide" src="app/assets/img/livro/livro1maislidos.jpg" class="second-slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Titulo 2</h1>
@@ -46,7 +48,7 @@
           </div>
         </div>
         <div class="item active">
-          <img alt="Third slide" src="app/assets/img/livro2destaque.jpg" class="third-slide">
+          <img alt="Third slide" src="app/assets/img/livro/livro2destaque.jpg" class="third-slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Titulo 3</h1>
@@ -72,6 +74,13 @@
         </div><!--/.col-xs-12.col-sm-9-->
 
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+				<form id="buscarLivro" role="search">
+				<div class="form-group">
+					<label id="titulonomeLivro" for="nomeLivro">Buscar Livro</label>
+					<input id="nomeLivro" type="text" class="form-control" placeholder="Buscar Livro" name="nomeLivro">
+				</div>
+				<button type="submit" class="btn btn-default">Buscar</button>
+		</form>
           <div class="list-group">
             <a href="#" class="list-group-item active">Aventura</a>
             <a href="#" class="list-group-item">Ficção</a>
@@ -81,3 +90,4 @@
         </div><!--/.sidebar-offcanvas-->
       
 </section>
+<script src="app/assets/js/livro.js"></script>

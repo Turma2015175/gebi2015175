@@ -22,7 +22,7 @@
 				#echo $get = (string) trim(addslashes(strip_tags($_GET['param'])));
 				$get = (string) trim(addslashes(strip_tags(filter_input(INPUT_GET, "acao", FILTER_SANITIZE_STRING))));
 				
-				$allow = array("login");
+				$allow = array("login", "slider");
 				
 				if(in_array($get, $allow))
 				{

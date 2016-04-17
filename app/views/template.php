@@ -1,6 +1,4 @@
-<?php 
-	header('Content-Type: text/html; charset=utf-8');
-?>
+<?php header('Content-Type: text/html; charset=utf-8');?>
 
 <!DOCTYPE html>
 
@@ -16,6 +14,7 @@
     <title> Scrinia <?php echo $title = "" ?></title>
 
     <link href='https://fonts.googleapis.com/css?family=Arvo:400,700italic' rel='stylesheet' type='text/css'>
+	<link href="app/assets/css/jquery.bxslider.css" rel="stylesheet" />
     <link href="app/assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="app/assets/css/datepicker.css">
 	<link href="app/assets/css/style.css" rel="stylesheet" />
@@ -28,6 +27,12 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+	<script src="app/assets/js/jquery.min.js"></script>
+	<script src="app/assets/js/jquery.validate.min.js"></script>
+	<script src="app/assets/js/bootstrap.min.js"></script>
+	<script src="app/assets/js/bootstrap-datepicker-pt-BR.js"></script> 
+
   </head>
   <body>
     <div id="preloader">
@@ -37,8 +42,9 @@
 	<div id="site">
 	<div class="col-xs-10 col-xs-offset-1">
 		<header>
-			
-			<h1 title="Scrinia"><span class="img-responsive" alt="Logo_Responsivo" id="logo-img" ></span> </h1>
+		
+            <img class="img-responsive" src="app/assets/img/logoM.png" alt=""></span>
+			<h1 title="Scrinia"></h1>
 		</header>
 		<nav class="navbar navbar-default">
 			<div class="container">
@@ -57,36 +63,21 @@
 						echo '"./usuarios"';
 					}else{echo '"./home"';}?>
 					>Home</a></li>
-						<li><a href='./quemsomos'>Quem Somos</a></li>
-					
+						
+						<?php
+					if(empty($_SESSION['token']) || empty($_SESSION['nome']) || empty($_SESSION['id'])){
+						echo "<li><a href='./quemsomos'>Quem Somos</a></li>";
+					}?>				
 					</ul>
 					<div id="navbar" class="navbar-right">
 					<?php
 					if(!empty($_SESSION['token']) || !empty($_SESSION['nome']) || !empty($_SESSION['id'])){
-						echo '
-						<form class="navbar-form">
-							<div class="form-group"><a href="./usuarios" type="button" class="btn btn-success">'.$_SESSION['nome']."</a>
-								
-							</div>
-							<div class='form-group'>
-								<a class='btn btn-danger' href='#'>Sair</a>
-							</div>
-							
-						
-					</form>";
-			
-					}else{ echo "
-						<form class='navbar-form'>
-							<div class='form-group'>
-								<a class='btn btn-success' href='./login'>Entrar</a>
-							</div>
-							<div class='form-group'>
-								<a class='btn btn-primary' href='./cadastrouser'>Cadastro</a>
-							</div>
-							
-						
-						</form>";}
-					?>	
+
+
+						echo '<form class="navbar-form"><div class="form-group"><a href="./usuarios" type="button" class="btn btn-success">'.$_SESSION['nome'].'</a></div><div class="form-group"><a class="btn btn-danger" id="logout" href="#">Sair</a></div></form>';
+					}
+					else{ echo "<form class='navbar-form'><div class='form-group'><a class='btn btn-success' href='./login'>Entrar</a></div><div class='form-group'><a class='btn btn-primary' href='./cadastrouser'>Cadastro</a></div></form>";
+						}?>	
 					</div>
 				</div><!--/.nav-collapse -->
 			</div>
@@ -117,14 +108,8 @@
 			<p> @Copyright 2016. Todos os direitos reservados.</p> 
 		</footer>
 	</div>
-	
+  
 
-    
-    <script src="app/assets/js/jquery.min.js"></script>
-	<script src="app/assets/js/jquery.validate.min.js"></script>
-	<script src="app/assets/js/bootstrap.min.js"></script>
-	<script src="app/assets/js/main.js"></script>
-	<script src="app/assets/js/bootstrap-datepicker-pt-BR.js"></script>
 	<script src="app/assets/js/scripts.js"></script>
 	<script src="app/assets/js/init.js"></script>
     

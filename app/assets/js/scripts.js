@@ -5,7 +5,8 @@
 
 function Usuario(){
 		
-	$("#formLogin").validate({
+	$('#formLogin').validate({
+		
 		rules: {
 			email : {
 				required: true,
@@ -86,14 +87,31 @@ function Usuario(){
 		}
 		
 	});
-};
 
-$("#formCadastroUsuario").validate({		
+
+
+	
+	$("#logout").click(function(){
+			$.ajax({
+				url: "app/services/logout",
+				type: "POST"
+			}).done(function(resposta){
+				if(!resposta.erro){
+
+					location.href="./";
+				}
+			});
+	});
+	$("#formCadastroUsuario").validate({		
 		rules : {
 			nome : {
 				required : true,
 				minlength : 10,
 				maxlength : 50
+			},
+			sobrenome : {
+				required : true,
+				minlength : 10
 			},
 			email_pessoal : {
 				required : true,
@@ -111,6 +129,11 @@ $("#formCadastroUsuario").validate({
 			celular : {
 				required : true,
 				maxlength : 11
+			},
+			login : {
+				required : true,
+				minlength: 6,
+				maxlength: 12
 			},
 			senha : {
 				required : true,
@@ -143,6 +166,10 @@ $("#formCadastroUsuario").validate({
 				minlength : "Seu nome deve conter no mínimo 10 caracteres.",
 				maxlength : "Seu nome deve conter no máximo 50 caracteres."
 			},
+			sobrenome : {
+				required : "Preencha o campo sobrenome.",
+				minlength : "Seu nome deve conter no mínimo 10 caracteres."
+			},
 			email_pessoal : {
 				required : "Preencha o campo e-mail.",
 				email : "E-mail inválido.",
@@ -159,6 +186,11 @@ $("#formCadastroUsuario").validate({
 			celular : {
 				required : "Preencha o campo telefone.",
 				maxlength : "Seu número de celular deve conter no máximo 11 caracteres."
+			},
+			login : {
+				required : "Preencha o campo login",
+				minlength : "Seu login deve conter no mínimo 6 caracteres.",
+				maxlength : "Seu login deve conter no máximo 12 caracteres."
 			},
 			senha : {
 				required : "Preencha o campo senha.",
@@ -187,7 +219,7 @@ $("#formCadastroUsuario").validate({
 		},
 		submitHandler : function(dados){
 			var formData = new FormData(dados);
-			
+			alert('OK')
 			$.ajax({
 				url: "app/services/cadastrarUsuario",
 				type: "POST",
@@ -211,26 +243,21 @@ $("#formCadastroUsuario").validate({
 			});			
 		}		
 	});
+	
+	
+};
+function feedback(a, b, c, d){
 
-$(function(){
-			
-				$('#datepicker1').datepicker({
-					format: 'dd/mm/yyyy'
-				}).on('changeDate', function(e){
-					$(this).datepicker('hide');
-				});
-				
-				$('#datepicker2').datepicker({
-					format: 'dd/mm/yyyy'
-				}).on('changeDate', function(e){
-					$(this).datepicker('hide');
-				});
-				
-				$('#datepicker3').datepicker({
-					format: 'dd/mm/yyyy'
-				}).on('changeDate', function(e){
-					$(this).datepicker('hide');
-				});
-				
-			
-			});
+		$(".alert").remove();
+		$(a).after(
+			'<div class="alert ' + b +' alert-dismissible" role="alert">' +
+				'<button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
+					'<span aria-hidden="true">&times;</span>' +
+				'</button>' +
+				'<strong>' + 
+					'<span class="glyphicon ' + c + '"></span>' +
+				'</strong> ' + d +
+			'</div>'		
+		);
+	
+	};

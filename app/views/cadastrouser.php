@@ -409,6 +409,11 @@
 					<input class="form-control" type="text" id="bairro" name="bairro" placeholder="Digite seu Bairro."/>
 				</div>	
 
+				<div class="form-group">
+					<p class="text-info">Apenas imagens jpg, jpeg e png</p>
+					<label for="arquivo">Escolha sua imagem</label>
+					<input type="file" name="arquivo" id="arquivo" >
+				</div>
 				<input class="btn btn-default" type="submit" value="Finalizar Cadastro" id="enviar"/>
 			</div>
 			
