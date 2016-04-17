@@ -6,19 +6,21 @@ o tipo de publicação (por exemplo, livro, apostila, mídia, artigo, entre outr
  então na tela será exibido o título, autor e editora do livro, sendo possível editar a edição do exemplar, 
  o ano. O código do exemplar será gerado automaticamente, bem como, a data de aquisição conforme a data atual de cadastramento do exemplar. -->
 
-<div class="col-xs-10 col-sm-8">
+<!--<div class="col-xs-12 col-sm-6 col-sm-offset-3"> -->
+<div class="col-xs-12 col-sm-12 ">
 
 <form action="" method="" id="cadastrolivro">
 
 	<fieldset>
 							
+		<div class="row">
 		<legend>Cadastro de biblioteca</legend>
 		
 		<div class="row">
 			<div class="col-xs-12 col-sm-12">
 				<div class="form-group cadastrolivro">
 					<label for="titulolivro">Nome</label>
-					<input class="form-control" id="titulolivro" placeholder="Digite o nome da biblioteca">
+					<input class="form-control" id="titulolivro" placeholder="Nome da biblioteca">
 				</div> 
 			</div> 
 		</div> 
@@ -290,7 +292,7 @@ o tipo de publicação (por exemplo, livro, apostila, mídia, artigo, entre outr
 			<div class="select" class="form-group">
 				<label for="estados">Estado:</label>	
 				<select class="form-control" name="estados">
-						<option value="0">Selecione o Estado</option>
+						<option value="0">Selecione</option>
 						<option value="ac">Acre</option>
 						<option value="al">Alagoas</option>
 						<option value="ap">Amapá</option>
@@ -322,51 +324,52 @@ o tipo de publicação (por exemplo, livro, apostila, mídia, artigo, entre outr
 			</div>
 		</div>
 
-			<div class="col-xs-12 col-sm-4">
+			<div class="col-xs-12 col-sm-3">
 				<div class="form-group">
 					<label for="cep">Cep:</label>
 					<input class="form-control" type="text" id="cep" name="cep" placeholder="Digite seu Cep"/>
 				</div>	
 			</div>	
 			
-			<div class="col-xs-12 col-sm-4">
+			<div class="col-xs-12 col-sm-5">
 				<div class="form-group">
 					<label for="bairro">Bairro:</label>
-					<input class="form-control" type="text" id="bairro" name="bairro" placeholder="Digite seu Bairro"/>
+					<input class="form-control" type="text" id="bairro" name="bairro" placeholder="Digite seu bairro"/>
 				</div>
-			</div>
-		
-		
-		
+			</div>		
+
 		</div>
-
-		<div class="row">
-
 		
-		<div class="col-xs-12 col-sm-10">
+		<div class="row">
+		
+		<div class="col-xs-12 col-sm-12">
 			<div class="form-group">
-				<label for="endereco" >Endereço:</label>
-				<input class="form-control" type="text" id="end" name="endereco" placeholder="Digite seu Endereço"/>
+				<label for="endereco" >Logradouro:</label>
+				<input class="form-control" type="text" id="end" name="endereco" placeholder="Digite seu logradouro"/>
 			</div>
 		</div>	
-	
 
-		<div class="col-xs-12 col-sm-2">
+		</div>
+
+
+		<div class="row">
+		
+		
+		<div class="col-xs-12 col-sm-4">
 			<div class="form-group">
 				<label for="numero">Número:</label>
-				<input class="form-control" type="text" id="numEnd" name="numero" placeholder="Número"/>
+				<input class="form-control" type="text" id="numEnd" name="numero" placeholder="Digite seu número"/>
 			</div>
 		</div>	
-		</div>
-
-
-		<div class="row">
 
 		</div>
+		
+			<div class="form-group">
+				<input class="btn btn-default" type="submit" value="Finalizar Cadastro" id="enviar"/>
+			</div>
 
-		<div class="form-group">
-		<input class="btn btn-default" type="submit" value="Finalizar Cadastro" id="enviar"/>
-		</div>
+	
+	</div>
 		
 	</fieldset>
 	

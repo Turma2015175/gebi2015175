@@ -15,7 +15,7 @@
 		  </div>
 		   <div class="checkbox">
 				<label>
-					<input type="checkbox" name="lembrar" value="1"> Check me out
+					<input type="checkbox" name="lembrar" value="1"> Guardar login e senha.
 				</label>
 		  </div>
 		  <button type="submit" class="btn btn-default">Login</button>

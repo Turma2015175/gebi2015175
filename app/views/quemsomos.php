@@ -7,7 +7,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7">
-			<h2 class="featurette-heading">Lorenna <span class="text-muted">frase inpiradora</span></h2>
+		  <h2 class="featurette-heading">Lorenna <h3 <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span> </h3> </h2>
 			<p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5">
@@ -19,7 +19,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7 col-md-push-5">
-		  <h2 class="featurette-heading">Roberta <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span></h2>
+		  <h2 class="featurette-heading">Roberta <h3 <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span> </h3> </h2>
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
@@ -31,7 +31,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7">
-		  <h2 class="featurette-heading">Fernando <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span></h2>
+		  <h2 class="featurette-heading">Fernando <h3 <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span> </h3> </h2>
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5">
@@ -43,7 +43,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7 col-md-push-5">
-		  <h2 class="featurette-heading">Francisco <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span></h2>
+		  <h2 class="featurette-heading">Francisco <h3 <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span> </h3> </h2>
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
@@ -55,7 +55,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7">
-		  <h2 class="featurette-heading">Ícaro <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span></h2>
+		  <h2 class="featurette-heading">Ícaro <h3 <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span> </h3> </h2>
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5">
@@ -67,7 +67,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7 col-md-push-5">
-		  <h2 class="featurette-heading">Lário <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span></h2>
+		  <h2 class="featurette-heading">Lário <h3 <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span> </h3> </h2>
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
@@ -79,7 +79,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7">
-		  <h2 class="featurette-heading">Lucas <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span></h2>
+		  <h2 class="featurette-heading">Lucas <h3 <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span> </h3> </h2>
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5">
@@ -91,7 +91,7 @@
 	
 	<div class="row featurette">
 		<div class="col-md-7 col-md-push-5">
-		  <h2 class="featurette-heading">Luiz <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span></h2>
+		  <h2 class="featurette-heading">Luiz <h3 <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span> </h3> </h2>
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
@@ -103,7 +103,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7">
-		  <h2 class="featurette-heading">Marcelo <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span></h2>
+		  <h2 class="featurette-heading">Marcelo <h3 <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span> </h3> </h2>
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5">
@@ -115,7 +115,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7 col-md-push-5">
-		  <h2 class="featurette-heading">Rafael <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span></h2>
+		  <h2 class="featurette-heading">Rafael <h3 <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span> </h3> </h2>
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
@@ -127,7 +127,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7">
-		  <h2 class="featurette-heading">Robson <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span></h2>
+		  <h2 class="featurette-heading">Robson <h3 <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span> </h3> </h2>
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5">
@@ -139,7 +139,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7 col-md-push-5">
-		  <h2 class="featurette-heading">Rómulo <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span></h2>
+		  <h2 class="featurette-heading">Rómulo <h3 <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span> </h3> </h2>
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
@@ -151,7 +151,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7">
-		  <h2 class="featurette-heading">Victor <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span></h2>
+		  <h2 class="featurette-heading">Victor <h3 <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span> </h3> </h2>
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5 ">
@@ -163,7 +163,7 @@
 
 	<div class="row featurette">
 		<div class="col-md-7 col-md-push-5">
-		  <h2 class="featurette-heading">Wendel <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span></h2>
+		  <h2 class="featurette-heading">Wendel <h3 <span class="text-muted">frase inspiradora (uma frase com qual você se indentifica)</span> </h3> </h2>
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5  col-md-pull-7">

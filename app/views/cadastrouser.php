@@ -1,51 +1,74 @@
 
-<div class="col-xs-12 col-sm-12">
+<div class="col-xs-12 col-sm-12 ">
 	<form action="" method="" id="formCadastroUsuario">
 		<fieldset class="col-xs-12 col-sm-12">
-			<legend>Cadastro</legend>
+			<legend>Cadastro de usuários</legend>
 
-				<div class="col-xs-12 col-sm-12 form-group">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
 					<label for="nome">Nome:</label>
 					<input class="form-control" type="text" id="nome" name="nome" placeholder="Digite seu Nome completo."/>
 				</div>	
+			</div>	
 				
-			<div class="col-xs-12 col-sm-6">
+			<div class="row">
 			
-				<div class="positions">
-					<div class="form-group esquerda">
-						<label for="idade">Data de Nascimento:</label>
-						<input class="form-control" style="width: 260px;" type="date" id="idade" name="idade"/>
-					</div>	
+				<div class="col-xs-12 col-sm-4">
+					<label for="idade">Data de Nascimento:</label>
+					<input class="form-control" style="width: 260px;" type="date" id="idade" name="idade"/>
+				</div>	
+
+			</div>
+			
+
+			<div class="row">
 					
-					<div class="form-group radio direita" style="display: inline-block; padding: 20px 0 0 20px;">
-						<label for="sexo">
-							<label for="masculino">
-								<input type="radio" name="sexo" id="masculino" value="masculino">Masculino
-							</label>
+				<div class="col-xs-12 col-sm-8">
+				
+
+					<label for="sexo">
+					<div class="form-group radio " style="display: inline-block; padding: 20px 0 0 0px;">
+						<label for="masculino">
+							<input type="radio" name="sexo" id="masculino" value="masculino">Masculino
+						</label>
 						
-							<label for="feminino">
-								<input type="radio" name="sexo" id="feminino" value="feminino">Feminino
-							</label>
+						<label for="feminino">
+							<input type="radio" name="sexo" id="feminino" value="feminino">Feminino
 						</label>
 					</div>	
+
+					</label>
 				</div>
+			</div>
+
+
+			<div class="row">
 				
+				
+				<div class="col-xs-12 col-sm-4">
+			
 				<div class="form-group">
 					<label for="telefone">Telefone:</label>
 					<input class="form-control" type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone."/>
 				</div>	
+				</div>	
+				
+				
+				<div class="col-xs-12 col-sm-8">
 				
 				<div class="form-group">
 					<label for="email_pessoal">Email:</label>
 					<input class="form-control" type="email" id="email_pessoal" name="email_pessoal" placeholder="Digite seu Email."/>
 				</div>	
+				</div>	
+			</div>
 				
 				<div class="form-group">
 					<label for="rsenha">Senha:</label>
 					<input class="form-control" type="password" id="senha" name="senha" placeholder="Digite sua Senha."/>
 				</div>
+
 				
-			</div>					
 
 			<div class="col-xs-12 col-sm-6">
 			
