@@ -219,7 +219,7 @@ function Usuario(){
 		},
 		submitHandler : function(dados){
 			var formData = new FormData(dados);
-			alert('OK')
+
 			$.ajax({
 				url: "app/services/cadastrarUsuario",
 				type: "POST",
@@ -231,13 +231,12 @@ function Usuario(){
 				
 				if(resposta.erro)
 				{
-					$(".alert").remove();
-					feedback("#titulo", "alert-danger", "glyphicon-warning-sign", resposta.mensagem);
+					alert(resposta.mensagem);					
 				}
 				else
 				{
-					$(".alert").remove();
-					feedback("#titulo", "alert-success", "glyphicon-ok", resposta.mensagem);
+
+					location.href="./usuarios";
 				}
 				
 			});			

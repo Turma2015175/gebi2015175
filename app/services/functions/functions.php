@@ -18,13 +18,15 @@
 			break;
 	}	
 	function logout(){
+		session_start();
 		unset($_SESSION['nome'],$_SESSION['token'],$_SESSION['id']);
 		session_destroy();
 		retorno(['erro'=>false]);
 	}
 	
 	
-	function login($con){
+	function login($con)
+	{
 		$email = trim(strip_tags(addslashes(filter_input(INPUT_POST,"email"))));
 		$senha = trim(strip_tags(addslashes(filter_input(INPUT_POST,"senha"))));
 		
@@ -77,7 +79,7 @@
 		$dir .= "/app/assets/imagens/usuarios/";
 		$ext = @end(explode("/", $_FILES['arquivo']['type']));
 		$tmp_name = $_FILES['arquivo']['tmp_name'];
-		$nomeImg = md5(date("d/m/Y H:i:s").$_POST['email']);
+		$nomeImg = md5(date("d/m/Y H:i:s").$_POST['email_pessoal']);
 		
 		$nome = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'nome'))));
 		$email = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'email_pessoal'))));
@@ -110,30 +112,44 @@
 			"mensagem" => "Erro ao cadastrar. Tente novamente."
 		];
 		
-		$ok = [
-			"erro"=>false,
-			"mensagem"=>"Usuário cadastrado com sucesso."
-		];
 		
 		$con->beginTransaction();
-		
-		$sql = "INSERT INTO usuario (nome, email, senha, imagem) 
-				VALUES(?,?,?,?)";
+		print_r( $nome." - ".$email." - ".$senha." - ".$imagem);
+
+		$sql = "INSERT INTO usuario VALUES(null,'".$senha."','".$nome."','".$email."','".$imagem."')";
 		$stmt = $con->prepare($sql);
-		$stmt->bindValue(1, $nome);
-		$stmt->bindValue(2, $email);
-		$stmt->bindValue(3, $senha);
-		$stmt->bindValue(4, $imagem);
+		
 		$resul = $stmt->execute();
+		$idusuario = $con->lastInsertId();
+		
+		/*$sql = "INSERT INTO endereco VALUES('".$pais."','".$cep."','".$logradouro."','".$numero."','".$bairro."','".$estado."')";
+		$stmt = $con->prepare($sql);
+		
+		$resul = $stmt->execute();
+		$idusuario = $con->lastInsertId();*/
+		
+		
+		
+		$ok = [
+			"erro"=>false,
+			"mensagem"=>"Usuário cadastrado com sucesso.",
+			"nome" => $nome
+		];
 
 		if(!$resul)
 		{
 			$mensagem = $erro;			
 			$con->rollback();
-		}
+		}	
 		
 		elseif($imagem == "avatar.png" && $resul)
 		{
+			$dados = $stmt->fetch(PDO::FETCH_ASSOC);	
+			
+			session_start();
+			$_SESSION['nome'] = $dados['nome'];
+			$_SESSION['token'] = md5($dados['email']);
+			$_SESSION['id'] = $dados['idUsuario'];
 			$mensagem = $ok;
 			$con->commit();
 		}		
@@ -142,6 +158,12 @@
 			$upload = move_uploaded_file($tmp_name, $dir.$nomeImg.".".$ext);			
 			if($resul && $upload)
 			{
+				$dados = $stmt->fetch(PDO::FETCH_ASSOC);	
+			
+				session_start();
+				$_SESSION['nome'] = $dados['nome'];
+				$_SESSION['token'] = md5($dados['email']);
+				$_SESSION['id'] = $dados['idUsuario'];
 				$mensagem = $ok;
 				$con->commit();
 			}

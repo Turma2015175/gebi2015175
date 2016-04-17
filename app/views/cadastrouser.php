@@ -14,7 +14,7 @@
 				<div class="positions">
 					<div class="form-group esquerda">
 						<label for="idade">Data de Nascimento:</label>
-						<input class="form-control" style="width: 260px;" type="date" id="idade datepicker1" name="idade"/>
+						<input class="form-control" style="width: 260px;" type="date" id="idade" name="idade"/>
 					</div>	
 					
 					<div class="form-group radio direita" style="display: inline-block; padding: 20px 0 0 20px;">
