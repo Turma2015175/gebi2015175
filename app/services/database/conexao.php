@@ -7,9 +7,9 @@
 	$pass	= "";
 	
 	// Servidor //
-	//$dsn 	= "mysql:dbname=scrinia; host=mysql.hostinger.com.br";
-	//$user 	= "u890064372_admin";
-	//$pass	= "gebi2015175";
+	//$dsn 	= "mysql:dbname=u935071429_scrin; host=mysql.hostinger.com.br";
+	//$user 	= "u935071429_scrin";
+	//$pass	= "ty7c8j89";
 
 	// Está armazenando a conexão dsn,user,pass 
 	$con = new PDO($dsn, $user, $pass);
