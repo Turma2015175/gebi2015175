@@ -128,12 +128,13 @@ footer p {
 .esquerda {
 	width: 50%;
 	float: left;
-	position: block;
+	
 }
 
 .direita {
 	width: 50%;
 	float: right;
+	position: block;
 }
 
 @media only screen and (max-width: 910px){
