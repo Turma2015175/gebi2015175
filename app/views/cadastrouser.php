@@ -1,6 +1,6 @@
 <script language="JavaScript">
 
-<<<<<<< HEAD
+
  function mascara(t, mask){
  var i = t.value.length;
  var saida = mask.substring(1,0);
@@ -11,9 +11,9 @@
  }
  </script>
 <div class="col-xs-12 col-sm-12">
-=======
+
 <div class="col-xs-12 col-sm-12 ">
->>>>>>> origin/master
+
 	<form action="" method="" id="formCadastroUsuario">
 		<fieldset class="col-xs-12 col-sm-12">
 			<legend>Cadastro de usuários</legend>
@@ -37,13 +37,13 @@
 
 			<div class="row">
 					
-<<<<<<< HEAD
+
 					<div class="form-group radio direita" style="display: inline-block; padding: 20px 0 0 20px;">
 						<label for="sexo"> 
 							<label for="masculino">
 								<input type="radio" name="sexo" id="masculino" value="masculino">Masculino
 							</label>
-=======
+
 				<div class="col-xs-12 col-sm-8">
 				
 
@@ -52,7 +52,7 @@
 						<label for="masculino">
 							<input type="radio" name="sexo" id="masculino" value="masculino">Masculino
 						</label>
->>>>>>> origin/master
+
 						
 						<label for="feminino">
 							<input type="radio" name="sexo" id="feminino" value="feminino">Feminino
