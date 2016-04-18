@@ -11,7 +11,7 @@
 			<p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5">
-			<img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/lorenna.jpg" alt="Generic placeholder image">
+			<img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/desenvolvedores/lorenna.jpg" alt="Generic placeholder image">
 		</div>
 	</div>
 
@@ -23,7 +23,7 @@
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
-		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/roberta.jpg" alt="Generic placeholder image">
+		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/desenvolvedores/roberta.jpg" alt="Generic placeholder image">
 		</div>
 	</div>
 
@@ -35,7 +35,7 @@
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5">
-		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/fernando.jpg" alt="Generic placeholder image">
+		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/desenvolvedores/fernando.jpg" alt="Generic placeholder image">
 		</div>
 	</div>
 
@@ -47,7 +47,7 @@
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
-		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/francisco.jpg" alt="Generic placeholder image">
+		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/desenvolvedores/francisco.jpg" alt="Generic placeholder image">
 		</div>
 	</div>
 
@@ -59,7 +59,7 @@
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5">
-		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/icaro.jpg" alt="Generic placeholder image">
+		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/desenvolvedores/icaro.jpg" alt="Generic placeholder image">
 		</div>
 	</div>
 
@@ -71,7 +71,7 @@
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
-		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/lario.jpg" alt="Generic placeholder image">
+		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/desenvolvedores/lario.jpg" alt="Generic placeholder image">
 		</div>
 	</div>
 
@@ -83,7 +83,7 @@
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5">
-		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/lucas.jpg" alt="Generic placeholder image">
+		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/desenvolvedores/lucas.jpg" alt="Generic placeholder image">
 		</div>
 	</div>
 
@@ -95,7 +95,7 @@
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
-		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/luiz.jpg" alt="Generic placeholder image">
+		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/desenvolvedores/luiz.jpg" alt="Generic placeholder image">
 		</div>
 	</div>
 
@@ -107,7 +107,7 @@
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5">
-		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/marcelo.jpg" alt="Generic placeholder image">
+		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/desenvolvedores/marcelo.jpg" alt="Generic placeholder image">
 		</div>
 	</div>
 
@@ -119,7 +119,7 @@
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
-		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/rafael.jpg" alt="Generic placeholder image">
+		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/desenvolvedores/rafael.jpg" alt="Generic placeholder image">
 		</div>
 	</div>
 
@@ -131,7 +131,7 @@
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5">
-		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/robson.jpg" alt="">
+		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/desenvolvedores/robson.jpg" alt="">
 		</div>
 	</div>
 
@@ -143,7 +143,7 @@
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
-		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/romulo.jpg" alt="Generic placeholder image">
+		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/desenvolvedores/romulo.jpg" alt="Generic placeholder image">
 		</div>
 	</div>
 
@@ -155,7 +155,7 @@
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5 ">
-		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/vitor.jpg" alt="Generic placeholder image">
+		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/desenvolvedores/vitor.jpg" alt="Generic placeholder image">
 		</div>
 	</div>
 
@@ -167,6 +167,6 @@
 		  <p class="lead">Aqui estará um resumo de sua trajetório profissional ou projetos dos quais participou. seu portfólio.</p>
 		</div>
 		<div class="col-md-5  col-md-pull-7">
-		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/wendel.jpg" alt="Generic placeholder image">
+		  <img class="featurette-image img-responsive center-block img-circle" src="app/assets/img/desenvolvedores/wendel.jpg" alt="Generic placeholder image">
 		</div>
 	</div>

@@ -102,6 +102,37 @@ function Usuario(){
 				}
 			});
 	});
+	
+	
+	
+	jQuery.validator.addMethod("cpf", function(value, element) {
+   value = jQuery.trim(value);
+
+    value = value.replace('.','');
+    value = value.replace('.','');
+    cpf = value.replace('-','');
+    while(cpf.length < 11) cpf = "0"+ cpf;
+    var expReg = /^0+$|^1+$|^2+$|^3+$|^4+$|^5+$|^6+$|^7+$|^8+$|^9+$/;
+    var a = [];
+    var b = new Number;
+    var c = 11;
+    for (i=0; i<11; i++){
+        a[i] = cpf.charAt(i);
+        if (i < 9) b += (a[i] * --c);
+    }
+    if ((x = b % 11) < 2) { a[9] = 0 } else { a[9] = 11-x }
+    b = 0;
+    c = 11;
+    for (y=0; y<10; y++) b += (a[y] * c--);
+    if ((x = b % 11) < 2) { a[10] = 0; } else { a[10] = 11-x; }
+
+    var retorno = true;
+    if ((cpf.charAt(9) != a[9]) || (cpf.charAt(10) != a[10]) || cpf.match(expReg)) retorno = false;
+
+    return this.optional(element) || retorno;
+
+}, "Informe um CPF válido");
+
 	$("#formCadastroUsuario").validate({		
 		rules : {
 			nome : {
@@ -109,10 +140,10 @@ function Usuario(){
 				minlength : 10,
 				maxlength : 50
 			},
-			sobrenome : {
-				required : true,
-				minlength : 10
+			idade :{
+				required: true,
 			},
+			
 			email_pessoal : {
 				required : true,
 				email : true,
@@ -122,18 +153,18 @@ function Usuario(){
 				required : true,
 				email : true
 			},
+			cpf :{
+				cpf: true, 
+				required: true,
+				
+			},
 			telefone : {
 				required : true,
-				maxlength : 15
+				maxlength : 12
 			},
 			celular : {
 				required : true,
-				maxlength : 11
-			},
-			login : {
-				required : true,
-				minlength: 6,
-				maxlength: 12
+				maxlength : 13
 			},
 			senha : {
 				required : true,
@@ -166,10 +197,10 @@ function Usuario(){
 				minlength : "Seu nome deve conter no mínimo 10 caracteres.",
 				maxlength : "Seu nome deve conter no máximo 50 caracteres."
 			},
-			sobrenome : {
-				required : "Preencha o campo sobrenome.",
-				minlength : "Seu nome deve conter no mínimo 10 caracteres."
+			idade : {
+				required : " Coloque sua data de nascimento"
 			},
+			
 			email_pessoal : {
 				required : "Preencha o campo e-mail.",
 				email : "E-mail inválido.",
@@ -179,6 +210,10 @@ function Usuario(){
 				required : "Repita seu E-mail.",
 				email : "E-mail inválido."
 			},
+			cpf :{
+				required:"Preencha o campo CPF",
+				cpf:"CPF invalido"
+			},
 			telefone : {
 				required : "Preencha o campo telefone.",
 				maxlength : "Seu número de telefone deve conter no máximo 15 caracteres."
@@ -187,11 +222,7 @@ function Usuario(){
 				required : "Preencha o campo telefone.",
 				maxlength : "Seu número de celular deve conter no máximo 11 caracteres."
 			},
-			login : {
-				required : "Preencha o campo login",
-				minlength : "Seu login deve conter no mínimo 6 caracteres.",
-				maxlength : "Seu login deve conter no máximo 12 caracteres."
-			},
+			
 			senha : {
 				required : "Preencha o campo senha.",
 				minlength : "Sua senha deve conter no mínimo 6 caracteres.",
@@ -203,6 +234,12 @@ function Usuario(){
 			cep : {
 				required : "Preencha o campo cep.",
 				maxlength : "Seu cep deve conter no máximo 9 caracteres."
+			},
+			estados : {
+				required: "Selecione um estado"
+			},
+			logradoura : {
+				required: "Selecione um logradoura"
 			},
 			endereco : {
 				required : "Preencha o campo endereço.",
