@@ -8,6 +8,7 @@ var livro = new Livro();
 	$(function(){
 			$(window).load(function(){
 				livro.slider();
+				livro.genero();
 			});
 		
 		

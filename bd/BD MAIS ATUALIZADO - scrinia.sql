@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 17-Abr-2016 às 19:12
+-- Generation Time: 18-Abr-2016 às 01:27
 -- Versão do servidor: 10.1.10-MariaDB
 -- PHP Version: 5.6.19
 
@@ -320,9 +320,7 @@ CREATE TABLE `sexo` (
 
 INSERT INTO `sexo` (`idSexo`, `sexo`) VALUES
 (1, 'masculino'),
-(2, 'feminino'),
-(3, 'Masculino'),
-(4, 'Feminino');
+(2, 'feminino');
 
 -- --------------------------------------------------------
 
@@ -365,10 +363,12 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`idUsuario`, `senha`, `nome`, `email`, `img`) VALUES
-(1, '924b0600518893846ef687823bacf5a960d3b651', 'admin', 'admin@admin.com', 'avatar.jpg'),
+(1, '924b0600518893846ef687823bacf5a960d3b651', 'admin', 'admin@admin.com', 'avatar.png'),
 (2, '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Diego Santos', 'diegosantos@user.com', 'avatar.jpg'),
 (3, '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Danilo Melo', 'danilomelo@user.com', 'avatar.jpg'),
-(4, '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Bruna Almeida', 'brunaalmeida@user.com', 'avatar.jpg');
+(4, '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Bruna Almeida', 'brunaalmeida@user.com', 'avatar.jpg'),
+(88, '2d943d2cc29a9829b155dbffabcaeaf3cd7cee23', 'lario dos Santos Diniz', 'lariodiniz@gmail.com', '099555d5ed6a7d7977c851fea7ffea47.jpeg'),
+(89, 'bdfa0acc400939819b9afc23bf462d66e57b0500', 'teste teeste teste', 'teste@teste.com', 'avatar.png');
 
 --
 -- Indexes for dumped tables
@@ -552,7 +552,7 @@ ALTER TABLE `sexo`
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
 --
 -- Constraints for dumped tables
 --

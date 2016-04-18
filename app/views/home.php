@@ -11,17 +11,17 @@
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <img class="first-slide" src="app/assets/img/Bibli1.jpg" alt="First slide">
-          <div class="container">
+          <div class="col-xs-12 col-sm-06 col-md-03 col-lg-02 container">
             <div class="carousel-caption">
               <p><span style="font-size: 50px" class="glyphicon glyphicon-book" aria-hidden="true" size="10px"></span></p>
               <h1>Encontre o livro que você quer.</h1>
               <p>A pesquisa é principal ferramenta de qualquer estudante, e o livro é a principal dessas ferramentas. Tem algum livro em mente para ajudar sua pesquisa? Nos te ajudaremos encontrá-lo.</p>
-                         </div>
+            </div>
           </div>
         </div>
         <div class="item">
           <img class="second-slide" src="app/assets/img/bibli2.jpg" alt="Second slide">
-          <div class="container">
+          <div class="col-xs-12 col-sm-06 col-md-03 col-lg-02 container">
             <div class="carousel-caption">
               <p><span style="font-size: 50px" class="glyphicon glyphicon-search" aria-hidden="true" size="10px"></span></p>
               <h1>Uma biblioteca próxima a você.</h1>
@@ -33,7 +33,7 @@
         </div>
         <div class="item">
           <img class="third-slide" src="app/assets/img/bibli3.jpg" alt="Third slide">
-          <div class="container">
+          <div class="col-xs-12 col-sm-06 col-md-03 col-lg-02 container">
             <div class="carousel-caption">
               <p><span style="font-size: 50px" class="glyphicon glyphicon-phone" aria-hidden="true" size="10px"></span></p>
               <h1>Use em qualquer lugar.</h1>

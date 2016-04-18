@@ -6,7 +6,7 @@ o tipo de publicação (por exemplo, livro, apostila, mídia, artigo, entre outr
  então na tela será exibido o título, autor e editora do livro, sendo possível editar a edição do exemplar, 
  o ano. O código do exemplar será gerado automaticamente, bem como, a data de aquisição conforme a data atual de cadastramento do exemplar. md lg -->
 
-<div class="col-xs-10 col-sm-8">
+<div class="col-xs-12 col-sm-12 ">
 
 <form action="" method="" id="cadastrolivro">
 
@@ -15,14 +15,19 @@ o tipo de publicação (por exemplo, livro, apostila, mídia, artigo, entre outr
 			<legend>Cadastro de Livro</legend>
 			
 			<div class="row">
-				<div class="col-xs-12 col-sm-6">
+				<div class="col-xs-12 col-sm-12">
 					<div class="form-group cadastrolivro">
 						<label for="titulolivro">Título</label>
 						<input class="form-control" id="titulolivro" placeholder="Digite o Título">
 					</div> 
 				</div> 
 					
-				<div class="col-xs-12 col-sm-6">
+
+			</div> 			
+			
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-12">
 					<div class="form-group cadastrolivro">
 						<label for="autorlivro">Autor</label>
 						<input class="form-control" id="autorlivro" placeholder="Digite o Autor">
@@ -32,7 +37,7 @@ o tipo de publicação (por exemplo, livro, apostila, mídia, artigo, entre outr
 			
 			
 			<div class="row">
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-12 col-sm-8">
 					<div class="form-group cadastrolivro">
 						 <label for="editoralivro">Editora</label> 
 						 <input class="form-control" id="editoralivro" placeholder="Editora" /> 
@@ -43,7 +48,7 @@ o tipo de publicação (por exemplo, livro, apostila, mídia, artigo, entre outr
 				<div class="col-xs-12 col-sm-2">
 					<div class="form-group cadastrolivro">
 						 <label for="edicao">Edição</label> 
-						 <input class="form-control" id="edicao" placeholder="n° Edição" />
+						 <input class="form-control" id="edicao" placeholder="N°" />
 					 </div> 
 				</div> 
 				
@@ -54,46 +59,25 @@ o tipo de publicação (por exemplo, livro, apostila, mídia, artigo, entre outr
 					</div>
 				</div>
 
-				<div class="col-xs-12 col-sm-2">
+
+			</div> 
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-4">
 					<div class="form-group cadastrolivro">
-						<label for="codigo">Código:</label>
+						<label for="codigo">Código do livro:</label>
 						<input class="form-control" id="anoedicao" placeholder="Código" />
 					</div>
 				</div>				
 
-				<div class="col-xs-12 col-sm-2">
+				<div class="col-xs-12 col-sm-4">
 					<div class="form-group cadastrolivro">
 						<label for="dataaquisicao">Data de Aquisição:</label>
 						<input class="form-control" type="date" id="datepicker2" name="dataaquisicao" placeholder="__/__/____"/>
 					</div>
 				</div>
-			</div> 
-
-
-			<div class="row">
-				<div class="col-xs-12 col-sm-6">
-					<div class="form-group cadastrolivro">
-						<label for="palavraschave">Palavras-Chave:</label>
-						<input class="form-control" id="palavraschave" name="palavraschave" size="80" />
-					</div>
-				</div>				
 				
-
-				<div class="col-xs-12 col-sm-2">
-					<div class="form-group cadastrolivro">
-						<label for="autorlivro">Autor</label>
-						<input class="form-control" id="autorlivro" placeholder="Digite o Autor" />
-					</div> 
-				</div>
-
-				 <div class="col-xs-12 col-sm-2">
-					<div class="form-group cadastrolivro">
-						<label for="codigo">Código do Livro:</label>
-						<input class="form-control" type="text" id="codlivro" name="codlivro" placeholder="Código do Livro"/>
-					 </div>
-				 </div>
-			
-				<div class="col-xs-12 col-sm-2">
+				<div class="col-xs-12 col-sm-4">
 					<div class="form-group cadastrolivro">
 					<label class="" for="publicacao">Tipo de Publicação:</label>
 						<select class="form-control" id="tipopublic" name="tipopublic">
@@ -105,7 +89,18 @@ o tipo de publicação (por exemplo, livro, apostila, mídia, artigo, entre outr
 						<option value="Outros">Outros</option>
 						</select>
 					</div>
+				</div>
+
+			</div> 
+
+			<div class="row">
+				<div class="col-xs-12 col-sm12">
+					<div class="form-group cadastrolivro">
+						<label for="palavraschave">Palavra-Chave:</label>
+						<input class="form-control" id="palavraschave" name="palavraschave" size="80" />
+					</div>
 				</div>				
+				
 			</div> 
 
 		<div class="form-group cadastrolivro">
