@@ -27,7 +27,98 @@ o tipo de publicação (por exemplo, livro, apostila, mídia, artigo, entre outr
 	
 		<div class="row">
 		
-		<!--
+		<div class="col-xs-12 col-sm-4">
+			<div class="select" class="form-group">
+				<label for="estados">Estado:</label>	
+				<select class="form-control" name="estados">
+						<option value="0">Selecione</option>
+						<option value="ac">Acre</option>
+						<option value="al">Alagoas</option>
+						<option value="ap">Amapá</option>
+						<option value="am">Amazonas</option>
+						<option value="ba">Bahia</option>
+						<option value="ce">Ceará</option>
+						<option value="df">Distrito Federal</option>
+						<option value="es">Espirito Santo</option>
+						<option value="go">Goiás</option>
+						<option value="ma">Maranhão</option>
+						<option value="ms">Mato Grosso do Sul</option>
+						<option value="mt">Mato Grosso</option>
+						<option value="mg">Minas Gerais</option>
+						<option value="pa">Pará</option>
+						<option value="pb">Paraíba</option>
+						<option value="pr">Paraná</option>
+						<option value="pe">Pernambuco</option>
+						<option value="pi">Piauí</option>
+						<option value="rj">Rio de Janeiro</option>
+						<option value="rn">Rio Grande do Norte</option>
+						<option value="rs">Rio Grande do Sul</option>
+						<option value="ro">Rondônia</option>
+						<option value="rr">Roraima</option>
+						<option value="sc">Santa Catarina</option>
+						<option value="sp">São Paulo</option>
+						<option value="se">Sergipe</option>
+						<option value="to">Tocantins</option>
+				</select>
+			</div>
+		</div>
+
+			<div class="col-xs-12 col-sm-3">
+				<div class="form-group">
+					<label for="cep">Cep:</label>
+					<input class="form-control" type="text" id="cep" name="cep" placeholder="Digite seu Cep"/>
+				</div>	
+			</div>	
+			
+			<div class="col-xs-12 col-sm-5">
+				<div class="form-group">
+					<label for="bairro">Bairro:</label>
+					<input class="form-control" type="text" id="bairro" name="bairro" placeholder="Digite seu bairro"/>
+				</div>
+			</div>		
+
+		</div>
+		
+		<div class="row">
+		
+		<div class="col-xs-12 col-sm-12">
+			<div class="form-group">
+				<label for="endereco" >Logradouro:</label>
+				<input class="form-control" type="text" id="end" name="endereco" placeholder="Digite seu logradouro"/>
+			</div>
+		</div>	
+
+		</div>
+
+
+		<div class="row">
+		
+		
+		<div class="col-xs-12 col-sm-4">
+			<div class="form-group">
+				<label for="numero">Número:</label>
+				<input class="form-control" type="text" id="numEnd" name="numero" placeholder="Digite seu número"/>
+			</div>
+		</div>	
+
+		</div>
+		
+			<div class="form-group">
+				<input class="btn btn-default" type="submit" value="Finalizar Cadastro" id="enviar"/>
+			</div>
+
+	
+	</div>
+		
+	</fieldset>
+	
+	
+	
+</form>
+</div>
+
+
+	<!--
 		<div class="col-xs-12 col-sm-3">
 			<div class="select" class="form-group">
 				<label id="pais" name="pais">País:</label>
@@ -288,95 +379,4 @@ o tipo de publicação (por exemplo, livro, apostila, mídia, artigo, entre outr
 			</div>
 		</div>	-->
 
-		<div class="col-xs-12 col-sm-4">
-			<div class="select" class="form-group">
-				<label for="estados">Estado:</label>	
-				<select class="form-control" name="estados">
-						<option value="0">Selecione</option>
-						<option value="ac">Acre</option>
-						<option value="al">Alagoas</option>
-						<option value="ap">Amapá</option>
-						<option value="am">Amazonas</option>
-						<option value="ba">Bahia</option>
-						<option value="ce">Ceará</option>
-						<option value="df">Distrito Federal</option>
-						<option value="es">Espirito Santo</option>
-						<option value="go">Goiás</option>
-						<option value="ma">Maranhão</option>
-						<option value="ms">Mato Grosso do Sul</option>
-						<option value="mt">Mato Grosso</option>
-						<option value="mg">Minas Gerais</option>
-						<option value="pa">Pará</option>
-						<option value="pb">Paraíba</option>
-						<option value="pr">Paraná</option>
-						<option value="pe">Pernambuco</option>
-						<option value="pi">Piauí</option>
-						<option value="rj">Rio de Janeiro</option>
-						<option value="rn">Rio Grande do Norte</option>
-						<option value="rs">Rio Grande do Sul</option>
-						<option value="ro">Rondônia</option>
-						<option value="rr">Roraima</option>
-						<option value="sc">Santa Catarina</option>
-						<option value="sp">São Paulo</option>
-						<option value="se">Sergipe</option>
-						<option value="to">Tocantins</option>
-				</select>
-			</div>
-		</div>
-
-			<div class="col-xs-12 col-sm-3">
-				<div class="form-group">
-					<label for="cep">Cep:</label>
-					<input class="form-control" type="text" id="cep" name="cep" placeholder="Digite seu Cep"/>
-				</div>	
-			</div>	
-			
-			<div class="col-xs-12 col-sm-5">
-				<div class="form-group">
-					<label for="bairro">Bairro:</label>
-					<input class="form-control" type="text" id="bairro" name="bairro" placeholder="Digite seu bairro"/>
-				</div>
-			</div>		
-
-		</div>
-		
-		<div class="row">
-		
-		<div class="col-xs-12 col-sm-12">
-			<div class="form-group">
-				<label for="endereco" >Logradouro:</label>
-				<input class="form-control" type="text" id="end" name="endereco" placeholder="Digite seu logradouro"/>
-			</div>
-		</div>	
-
-		</div>
-
-
-		<div class="row">
-		
-		
-		<div class="col-xs-12 col-sm-4">
-			<div class="form-group">
-				<label for="numero">Número:</label>
-				<input class="form-control" type="text" id="numEnd" name="numero" placeholder="Digite seu número"/>
-			</div>
-		</div>	
-
-		</div>
-		
-			<div class="form-group">
-				<input class="btn btn-default" type="submit" value="Finalizar Cadastro" id="enviar"/>
-			</div>
-
 	
-	</div>
-		
-	</fieldset>
-	
-	
-	
-</form>
-</div>
-
-
-

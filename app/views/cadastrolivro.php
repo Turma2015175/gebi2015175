@@ -73,7 +73,7 @@ o tipo de publicação (por exemplo, livro, apostila, mídia, artigo, entre outr
 				<div class="col-xs-12 col-sm-4">
 					<div class="form-group cadastrolivro">
 						<label for="dataaquisicao">Data de Aquisição:</label>
-						<input class="form-control" type="date" id="datepicker1" name="dataaquisicao" placeholder="__/__/____"/>
+						<input class="form-control" type="date" id="datepicker2" name="dataaquisicao" placeholder="__/__/____"/>
 					</div>
 				</div>
 				

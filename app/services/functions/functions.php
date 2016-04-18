@@ -16,6 +16,9 @@
 		case "slider":
 			slider($con);
 			break;
+		case "genero":
+			genero($con);
+			break;
 	}	
 	function logout(){
 		session_start();
@@ -25,8 +28,7 @@
 	}
 	
 	
-	function login($con)
-	{
+	function login($con){
 		$email = trim(strip_tags(addslashes(filter_input(INPUT_POST,"email"))));
 		$senha = trim(strip_tags(addslashes(filter_input(INPUT_POST,"senha"))));
 		
@@ -45,6 +47,7 @@
 			$_SESSION['nome'] = $dados['nome'];
 			$_SESSION['token'] = md5($dados['email']);
 			$_SESSION['id'] = $dados['idUsuario'];
+			$_SESSION['img'] = $dados['img'];
 			
 			$info = array("erro" => false);
 			
@@ -58,17 +61,49 @@
 	function slider($con){
 		
 		
-		$sql = "SELECT * FROM livro limit 2";
+		$sql = "SELECT * FROM livro LIMIT 3";
 		
-		$stmt = $con->prepare($sql);
-		$resul = $stmt->execute();		
+		$stmt = $con->query($sql);
 		$dados = $stmt->fetchAll(PDO::FETCH_ASSOC);
-		$nome = [];
-		for($i = 0; $i<2; $i++){
-			array_push($nome, $dados[$i]['nome']);
-		}
+		$var = array();
+
+		foreach ($dados as $key => $value){
+			
+			$dados[$key] = [
+			'idLivro' => $value['idLivro'],
+			'titulo' => utf8_decode($value['titulo']),
+			'img' => $value['img'],
+			'idAutor' => $value['idAutor'],
+			'idGenero' => $value['idGenero']
+		];
+			
+		};
 		
-		retorno($nome);
+		echo json_encode($dados);
+
+
+		//retorno($dados);
+	}
+	
+	
+	
+	function genero($con){
+		
+		
+		$sql = "SELECT * FROM genero";
+		
+		$stmt = $con->query($sql);
+		$dados = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		
+		foreach ($dados as $key => $value){
+			
+			$dados[$key] = [
+			'idGenero' => $value['idGenero'],
+			'genero' => utf8_decode($value['genero'])
+		];
+			
+		};
+		echo json_encode($dados);
 	}
 	
 	function cadastrarUsuario($con)
@@ -76,26 +111,36 @@
 		
 		$dir = explode("/", BASE_PATH) ;
 		$dir = $dir[0] . "/" . $dir[1] . "/" . $dir[2] . "/" . $dir[3] . "/" . $dir[4];		
-		$dir .= "/app/assets/imagens/usuarios/";
+		$dir .= "/app/assets/img/usuarios/";
 		$ext = @end(explode("/", $_FILES['arquivo']['type']));
 		$tmp_name = $_FILES['arquivo']['tmp_name'];
 		$nomeImg = md5(date("d/m/Y H:i:s").$_POST['email_pessoal']);
 		
+		$senha = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'senha'))));
 		$nome = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'nome'))));
 		$email = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'email_pessoal'))));
-		$telefone = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'telefone'))));
-		$cpf = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'cpf'))));
-		$celular = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'celular'))));
-		
-		$sexo = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'sexo'))));
-		$senha = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'senha'))));
-		$biografia = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'biografia'))));
+		$pais = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'pais'))));
 		$cep = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'cep'))));
 		$endereco = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'end'))));
 		$numEnd = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'numEnd'))));
 		$bairro = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'bairro'))));
 		$estado = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'estado'))));
 	
+
+
+	
+		
+		$telefone = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'telefone'))));
+		$cpf = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'cpf'))));
+		$celular = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'celular'))));
+		
+		$sexo = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'sexo'))));
+		
+		$biografia = trim(addslashes(strip_tags(filter_input(INPUT_POST, 'biografia'))));
+		
+		
+		
+
 		
 		
 		
@@ -114,22 +159,13 @@
 		
 		
 		$con->beginTransaction();
-		print_r( $nome." - ".$email." - ".$senha." - ".$imagem);
+		
 
-		$sql = "INSERT INTO usuario VALUES(null,'".$senha."','".$nome."','".$email."','".$imagem."')";
+		$sql = "INSERT INTO usuario VALUES(null,'".$senha."','".$nome."','".$email."','".$imagem."');";
 		$stmt = $con->prepare($sql);
 		
 		$resul = $stmt->execute();
-		$idusuario = $con->lastInsertId();
-		
-		/*$sql = "INSERT INTO endereco VALUES('".$pais."','".$cep."','".$logradouro."','".$numero."','".$bairro."','".$estado."')";
-		$stmt = $con->prepare($sql);
-		
-		$resul = $stmt->execute();
-		$idusuario = $con->lastInsertId();*/
-		
-		
-		
+
 		$ok = [
 			"erro"=>false,
 			"mensagem"=>"Usuário cadastrado com sucesso.",
@@ -147,9 +183,10 @@
 			$dados = $stmt->fetch(PDO::FETCH_ASSOC);	
 			
 			session_start();
-			$_SESSION['nome'] = $dados['nome'];
-			$_SESSION['token'] = md5($dados['email']);
-			$_SESSION['id'] = $dados['idUsuario'];
+			$_SESSION['nome'] = $nome;
+			$_SESSION['token'] = md5($email);
+			$_SESSION['id'] = $con->lastInsertId();
+			$_SESSION['img'] = $imagem;
 			$mensagem = $ok;
 			$con->commit();
 		}		
@@ -158,12 +195,14 @@
 			$upload = move_uploaded_file($tmp_name, $dir.$nomeImg.".".$ext);			
 			if($resul && $upload)
 			{
-				$dados = $stmt->fetch(PDO::FETCH_ASSOC);	
+					
 			
 				session_start();
-				$_SESSION['nome'] = $dados['nome'];
-				$_SESSION['token'] = md5($dados['email']);
-				$_SESSION['id'] = $dados['idUsuario'];
+				$_SESSION['nome'] = $nome;
+				$_SESSION['token'] = md5($email);
+				$_SESSION['id'] = $con->lastInsertId();
+				$_SESSION['img'] = $imagem;
+				
 				$mensagem = $ok;
 				$con->commit();
 			}
@@ -184,4 +223,5 @@
 		header("Content-Type: application/json");
 		echo json_encode($array);
 	}
+	
 ?>

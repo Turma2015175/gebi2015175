@@ -1,12 +1,12 @@
 
-<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+<div class="col-xs-12 col-sm-12">
 
 	
 	<h3>Login</h3>
 	<div id="feedback"></div>
 	<form id="formLogin" novalidate>
 		  <div class="form-group">
-				<label for="email" class="sr-only">E-mail</label>
+				<label for="email" >E-mail</label>
 				<input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
 		  </div>
 		  <div class="form-group">

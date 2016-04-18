@@ -1,6 +1,8 @@
 	<div class="row">
+		<div class="col-xs-12 col-sm-12">
+	<div class="row">
 		<div class="col-md-5">
-		  <img src="app/assets/img/livro1destaque.jpg" alt="Generic placeholder image" >
+		  <img src="app/assets/img/livros/livro1destaque.jpg" alt="Generic placeholder image" >
 		</div>
 
 		<div class="col-md-7">
@@ -14,10 +16,10 @@
 			Isso é o que tem tornado o mundo mais materialista a cada dia...</p>
 		</div>
 	</div>
-	<div class="row">
 		<div class="btn-group" role="group" aria-label="...">
 			  <button type="button" class="btn btn-default">Proximo livro</button>
 			  <button type="button" class="btn btn-default">Livro anterior</button>
 		</div>
+	</div>
 	</div>
 	
