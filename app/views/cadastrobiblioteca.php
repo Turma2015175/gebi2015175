@@ -66,7 +66,7 @@ o tipo de publicação (por exemplo, livro, apostila, mídia, artigo, entre outr
 			<div class="col-xs-12 col-sm-3">
 				<div class="form-group">
 					<label for="cep">Cep:</label>
-					<input class="form-control" type="text" id="cep" name="cep" placeholder="Digite seu Cep"/>
+					<input class="form-control" type="text" id="cep" name="cep" onkeypress="mascara(this, "###.###.###-##")" maxlength="14" placeholder="Digite seu Cep"/>
 				</div>	
 			</div>	
 			

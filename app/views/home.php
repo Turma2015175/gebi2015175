@@ -1,15 +1,22 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+<div class="row-xs-12 row-sm-06 row-md-03 row-lg-02 container">
+
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
+ 
+
+
+ <div class="carousel-inner" role="listbox">
+       
+	   <div class="item active">
           <img class="first-slide" src="app/assets/img/Bibli1.jpg" alt="First slide">
           <div class="col-xs-12 col-sm-06 col-md-03 col-lg-02 container">
             <div class="carousel-caption">
@@ -19,7 +26,8 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        
+		<div class="item">
           <img class="second-slide" src="app/assets/img/bibli2.jpg" alt="Second slide">
           <div class="col-xs-12 col-sm-06 col-md-03 col-lg-02 container">
             <div class="carousel-caption">
@@ -31,7 +39,8 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        
+		<div class="item">
           <img class="third-slide" src="app/assets/img/bibli3.jpg" alt="Third slide">
           <div class="col-xs-12 col-sm-06 col-md-03 col-lg-02 container">
             <div class="carousel-caption">
@@ -42,6 +51,7 @@
             </div>
           </div>
         </div>
+		
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -52,6 +62,8 @@
         <span class="sr-only">Próximo</span>
       </a>
     </div><!-- /.carousel -->
+	
+    </div>
 
 
     <!-- Marketing messaging and featurettes

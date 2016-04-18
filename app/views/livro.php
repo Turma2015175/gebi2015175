@@ -14,12 +14,14 @@
 			emoções e necessidades, pois muitas pessoas não enxergam a 
 			relação entre o desenvolvimento financeiro e o espiritual. 
 			Isso é o que tem tornado o mundo mais materialista a cada dia...</p>
-		</div>
-	</div>
 		<div class="btn-group" role="group" aria-label="...">
 			  <button type="button" class="btn btn-default">Proximo livro</button>
 			  <button type="button" class="btn btn-default">Livro anterior</button>
 		</div>
+		</div>
+
+	</div>
+
 	</div>
 	</div>
 	

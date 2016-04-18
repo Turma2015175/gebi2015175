@@ -1,3 +1,6 @@
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+
+
 <script language="JavaScript">
  function mascara(t, mask){
  var i = t.value.length;
@@ -8,14 +11,12 @@
  }
  }
  </script>
-<div class="col-xs-12 col-sm-12 ">
 	<form action="" method="" id="formCadastroUsuario">
-	<fieldset >
 	<div class="row">
 			<legend>Cadastro de usuários</legend>
 
 			<div class="row">
-				<div class="col-xs-12 col-sm-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 					<label for="nome">Nome:</label>
 					<input class="form-control" type="text" id="nome" name="nome" placeholder="Digite seu nome completo."/>
 				</div>	
@@ -23,33 +24,29 @@
 				
 			<div class="row">
 			
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 ">
 					<label for="idade">Data de Nascimento:</label>
-					<input class="form-control" type="date" id="datepicker" name="dataaquisicao" placeholder="__/__/____"/>
+					<input class="form-control" type="date" id="datepicker2" name="dataaquisicao" placeholder="__/__/____"/>
 				</div>	
 				
 				
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 ">
 					<label for="cpf">CPF:</label>
-					<input class="form-control" type="text" id="cpf" name="cpf" onkeypress="mascara(this, '###.###.###-##')" maxlength="14" placeholder="Digite seu CPF."/>
+					<input class="form-control" type="text" id="cpf" name="cpf"   placeholder="Digite seu CPF."/>
 				</div>
 					
-				<div class="col-xs-12 col-sm-4">
 				
-
-					<label for="sexo">
-					<div class="form-group radio " style="display: inline-block; padding: 20px 0 0 0px;">
-						<label for="masculino">
-							<input type="radio" name="sexo" id="masculino" value="masculino">Masculino
-						</label>
-						
-						<label for="feminino">
-							<input type="radio" name="sexo" id="feminino" value="feminino">Feminino
-						</label>
-					</div>	
-
-					</label>
-				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 ">
+					<div class="form-group cadastrolivro">
+					<label class="" for="publicacao">Sexo:</label>
+						<select class="form-control" id="tipopublic" name="tipopublic">
+						<option selected="selected">Masculino ou feminino</option>
+						<option id="masculino" value="masculino">Masculino</option>
+						<option id="feminino" value="feminino">Feminino</option>
+						</select>
+					</div>
+				</div>				
+	
 			</div>
 
 
@@ -205,6 +202,10 @@
 			<div class="form-group">
 				<!--<p class="text-info">Apenas imagens jpg, jpeg e png</p>-->
 				<label for="arquivo">Escolha sua imagem <p class="text-info">(Apenas imagens jpg, jpeg ou png)</p></label>
+			</div>
+
+			<div class="form-group">
+				<!--<p class="text-info">Apenas imagens jpg, jpeg e png</p>-->
 				<input type="file" name="arquivo" id="arquivo" >
 			</div>
 		</div>	
@@ -288,8 +289,6 @@
 
 	
 	</div>
-	</fieldset>
-
 	</form>
 </div>
 
