@@ -33,12 +33,8 @@
 					<label for="cpf">CPF:</label>
 					<input class="form-control" type="text" id="cpf" name="cpf" onkeypress="mascara(this, '###.###.###-##')" maxlength="14" placeholder="Digite seu CPF."/>
 				</div>
-			</div>
-			
-
-			<div class="row">
 					
-				<div class="col-xs-12 col-sm-8">
+				<div class="col-xs-12 col-sm-4">
 				
 
 					<label for="sexo">
@@ -113,75 +109,7 @@
 			</div>
 			
 
-		<div class="row">
-				<div class="col-xs-12 col-sm-12">
-				<label>Informe seu género favorito:</label>
-			
-				<div class="checkbox">
-				
-				
-					<label for="autoajuda">
-						<input type="checkbox" id="autoajuda" name="autoajuda"/>Auto Ajuda
-					</label>
-				
-					<label for="aventura">
-						<input type="checkbox" id="aventura" name="aventura"/>Aventura
-					</label>
-					
-				
-					<label for="biografia">
-						<input type="checkbox" id="biografia" name="biografia"/>Biografia
-					</label>
-				
-					<label for="comedia">
-						<input type="checkbox" id="comedia" name="comedia"/>Comédia
-					</label>
-				
-					<label for="contos">
-						<input type="checkbox" id="contos" name="contos"/>Contos
-					</label>
-					
-				
-					<label for="drama">
-						<input type="checkbox" id="drama" name="drama"/>Drama
-					</label>
-					
-					<label for="estudos">
-						<input type="checkbox" id="estudos" name="estudos"/>Estudos
-					</label>
-					
-					<label for="ficcao">
-						<input type="checkbox" id="ficcao" name="ficcao"/>Ficção
-					</label>
-					
-					<label for="historia">
-						<input type="checkbox" id="historia" name="historia"/>História
-					</label>
-					
-					<label for="poesia">
-						<input type="checkbox" id="poesia" name="poesia"/>Poesia
-					</label>
-					
-					<label for="romantico">
-						<input type="checkbox" id="romantico" name="romantico"/>Romance
-					</label>
-					
-					<label for="policial">
-						<input type="checkbox" id="policial" name="policial"/>Romance Policial
-					</label>
-					
-					<label for="terror">
-						<input type="checkbox" id="terror" name="terror"/>Terror
-					</label>
-					
-					<label for="outro">
-						<input type="checkbox" id="outro" name="outro"/>Outros
-					</label>
-					
-				</div>	
-				</div>	
-		</div>
-
+		
 		<legend>Endereço</legend>
 		
 		<div class="row">
@@ -269,17 +197,91 @@
 				<input class="form-control" type="text" id="numEnd" name="numero" placeholder="Digite seu número"/>
 			</div>
 		</div>	
+		</div>
+		
+		<div class="row">
 			
-		<div class="col-xs-12 col-sm-8">
+		<div class="col-xs-12 col-sm-12">
 			<div class="form-group">
 				<!--<p class="text-info">Apenas imagens jpg, jpeg e png</p>-->
 				<label for="arquivo">Escolha sua imagem <p class="text-info">(Apenas imagens jpg, jpeg ou png)</p></label>
 				<input type="file" name="arquivo" id="arquivo" >
 			</div>
 		</div>	
-
+		
 		</div>
 		
+		
+		
+		<div class="row">
+				<div class="col-xs-12 col-sm-12">
+				<label>Informe seu género favorito:</label>
+			
+				<div class="checkbox">
+				
+				
+					<label for="autoajuda">
+						<input type="checkbox" id="autoajuda" name="autoajuda"/>Auto Ajuda
+					</label>
+				
+					<label for="aventura">
+						<input type="checkbox" id="aventura" name="aventura"/>Aventura
+					</label>
+					
+				
+					<label for="biografia">
+						<input type="checkbox" id="biografia" name="biografia"/>Biografia
+					</label>
+				
+					<label for="comedia">
+						<input type="checkbox" id="comedia" name="comedia"/>Comédia
+					</label>
+				
+					<label for="contos">
+						<input type="checkbox" id="contos" name="contos"/>Contos
+					</label>
+					
+				
+					<label for="drama">
+						<input type="checkbox" id="drama" name="drama"/>Drama
+					</label>
+					
+					<label for="estudos">
+						<input type="checkbox" id="estudos" name="estudos"/>Estudos
+					</label>
+					
+					<label for="ficcao">
+						<input type="checkbox" id="ficcao" name="ficcao"/>Ficção
+					</label>
+					
+					<label for="historia">
+						<input type="checkbox" id="historia" name="historia"/>História
+					</label>
+					
+					<label for="poesia">
+						<input type="checkbox" id="poesia" name="poesia"/>Poesia
+					</label>
+					
+					<label for="romantico">
+						<input type="checkbox" id="romantico" name="romantico"/>Romance
+					</label>
+					
+					<label for="policial">
+						<input type="checkbox" id="policial" name="policial"/>Romance Policial
+					</label>
+					
+					<label for="terror">
+						<input type="checkbox" id="terror" name="terror"/>Terror
+					</label>
+					
+					<label for="outro">
+						<input type="checkbox" id="outro" name="outro"/>Outros
+					</label>
+					
+				</div>	
+				</div>	
+		</div>
+
 			<div class="form-group">
 				<input class="btn btn-default" type="submit" value="Finalizar Cadastro" id="enviar"/>
 			</div>
